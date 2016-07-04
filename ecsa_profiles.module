@@ -1,0 +1,8 @@
+<?php
+/**
+ * @file
+ * Code for the ECSA profiles feature.
+ */
+
+include_once 'ecsa_profiles.features.inc';
+
