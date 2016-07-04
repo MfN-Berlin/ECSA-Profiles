@@ -22,28 +22,25 @@ function ecsa_profiles_default_profile2_type() {
     "userCategory" : false,
     "userView" : false,
     "type" : "individual_profile",
-    "label" : "Individual Profile",
+    "label" : "ECSA Member Individual",
     "weight" : "0",
-    "data" : { "registration" : 0, "use_page" : 1 },
-    "rdf_mapping" : []
+    "data" : { "registration" : 0, "use_page" : 1 }
   }');
   $items['organization_profile'] = entity_import('profile2_type', '{
     "userCategory" : false,
     "userView" : false,
     "type" : "organization_profile",
-    "label" : "Organization Profile",
+    "label" : "ECSA Member Organization",
     "weight" : "0",
-    "data" : { "registration" : 0, "use_page" : 1 },
-    "rdf_mapping" : []
+    "data" : { "registration" : 0, "use_page" : 1 }
   }');
   $items['supporter_profile'] = entity_import('profile2_type', '{
     "userCategory" : false,
     "userView" : false,
     "type" : "supporter_profile",
-    "label" : "ECSA Supporter Profile",
+    "label" : "ECSA Supporter",
     "weight" : "0",
-    "data" : { "registration" : 0, "use_page" : 1 },
-    "rdf_mapping" : []
+    "data" : { "registration" : 0, "use_page" : 1 }
   }');
   return $items;
 }

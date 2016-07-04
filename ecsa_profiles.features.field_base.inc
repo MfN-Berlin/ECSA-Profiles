@@ -10,7 +10,7 @@
 function ecsa_profiles_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_account_hint'
+  // Exported field_base: 'field_account_hint'.
   $field_bases['field_account_hint'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -24,9 +24,10 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'markup',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'markup' => array(
-        'format' => 'filtered_html',
-        'value' => '<p>For your application we ask you to create a personal account on the website. It helps us to reduce spam applications. Upon admission, you’ll use this account to access the internal part of the website and maintain your profile.</p><p>&nbsp;</p>',
+        'format' => 'namu_filtered_text',
+        'value' => '<p>For your application we ask you to create a personal account on the website. It helps us to reduce spam applications. Upon admission, you&rsquo;ll use this account to access the internal part of the website and maintain your profile.</p><p>&nbsp;</p>',
       ),
       'profile2_private' => 0,
     ),
@@ -34,7 +35,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_citizen_science_hint'
+  // Exported field_base: 'field_citizen_science_hint'.
   $field_bases['field_citizen_science_hint'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -48,9 +49,10 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'markup',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'markup' => array(
-        'format' => 'full_html',
-        'value' => '<p><strong>If you are organizing Citizen Science projects, please list them here. Please include the name of the project (at least in English, local language also if you like), a URL (if there is no specific one for the project, please use the link of your organisation) and a brief description.</strong></p><p>We will use this information for your public profile on the website as well as for aggregate displays of information on ECSA members as well as for your internal profile so that other ECSA members can contact you.</p>',
+        'format' => 'namu_filtered_text',
+        'value' => '<p>If you are organizing Citizen Science projects, please list them here. Please include the name of the project (at least in English, local language also if you like), a URL (if there is no specific one for the project, please use the link of your organisation) and a brief description.</p><p>We will use this information for your public profile on the website as well as for aggregate displays of information on ECSA members as well as for your internal profile so that other ECSA members can contact you.</p>',
       ),
       'profile2_private' => 0,
     ),
@@ -58,7 +60,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_comments'
+  // Exported field_base: 'field_comments'.
   $field_bases['field_comments'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -66,7 +68,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_comments',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 1,
     ),
     'indexes' => array(
       'format' => array(
@@ -76,13 +78,14 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
-      'profile2_private' => 0,
+      'entity_translation_sync' => FALSE,
+      'profile2_private' => 1,
     ),
     'translatable' => 0,
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_contact_email'
+  // Exported field_base: 'field_contact_email'.
   $field_bases['field_contact_email'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -90,7 +93,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_contact_email',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -100,6 +103,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -107,7 +111,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_cs_expertise_area'
+  // Exported field_base: 'field_cs_expertise_area'.
   $field_bases['field_cs_expertise_area'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -115,7 +119,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_cs_expertise_area',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -125,13 +129,14 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_cs_organization_name'
+  // Exported field_base: 'field_cs_organization_name'.
   $field_bases['field_cs_organization_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -149,6 +154,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -156,7 +162,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_cs_project_contact'
+  // Exported field_base: 'field_cs_project_contact'.
   $field_bases['field_cs_project_contact'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -174,13 +180,14 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_cs_project_description'
+  // Exported field_base: 'field_cs_project_description'.
   $field_bases['field_cs_project_description'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -198,13 +205,14 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_cs_project_geo_scale'
+  // Exported field_base: 'field_cs_project_geo_scale'.
   $field_bases['field_cs_project_geo_scale'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -232,13 +240,14 @@ function ecsa_profiles_field_default_field_bases() {
         'International' => 'International',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_cs_project_name'
+  // Exported field_base: 'field_cs_project_name'.
   $field_bases['field_cs_project_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -256,6 +265,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -263,7 +273,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_cs_project_tags'
+  // Exported field_base: 'field_cs_project_tags'.
   $field_bases['field_cs_project_tags'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -319,13 +329,14 @@ function ecsa_profiles_field_default_field_bases() {
         'Water' => 'Water',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_cs_project_url'
+  // Exported field_base: 'field_cs_project_url'.
   $field_bases['field_cs_project_url'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -343,6 +354,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -350,7 +362,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_data_policy_hint'
+  // Exported field_base: 'field_data_policy_hint'.
   $field_bases['field_data_policy_hint'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -364,9 +376,10 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'markup',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'markup' => array(
-        'format' => 'full_html',
-        'value' => '<p style="text-align: justify;"><strong>Upon submitting the application, I declare that I have carefully read and understood the <a target="_blank" href="http://www.naturkundemuseum-berlin.de/en/meta-navigation/impressum/">data policy of the ECSA website</a>.</strong></p>',
+        'format' => 'namu_filtered_text',
+        'value' => '<p>Upon submitting the application, I declare that I have carefully read and understood the <a href="http://www.naturkundemuseum.berlin/en/privacy-policy" target="_blank">data policy of the ECSA website</a>.</p>',
       ),
       'profile2_private' => 0,
     ),
@@ -374,7 +387,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_eligibility_criteria'
+  // Exported field_base: 'field_eligibility_criteria'.
   $field_bases['field_eligibility_criteria'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -392,37 +405,14 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_eligibility_criteria_hint'
-  $field_bases['field_eligibility_criteria_hint'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_eligibility_criteria_hint',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'markup',
-    'settings' => array(
-      'markup' => array(
-        'format' => 'full_html',
-        'value' => '<p style="text-align: justify;"><strong>Please explain briefly if and how you are performing research on Citizen Science and/or taking part in Citizen Science activities and/or supporting Citizen Science, e.g. via funding or via communication (ECSA membership eligibility criteria).</strong></p>',
-      ),
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'markup',
-  );
-
-  // Exported field_base: 'field_expertise_area_hint'
+  // Exported field_base: 'field_expertise_area_hint'.
   $field_bases['field_expertise_area_hint'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -436,9 +426,10 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'markup',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'markup' => array(
-        'format' => 'full_html',
-        'value' => '<p>Please indicate areas of expertise for which other ECSA members my contact you. This information will only be visible on the internal profile visible to members only.</p>',
+        'format' => 'namu_filtered_text',
+        'value' => '<p>Please indicate areas of expertise for which other ECSA members may contact you. This information will only be visible on the internal profile visible to members only.</p>',
       ),
       'profile2_private' => 0,
     ),
@@ -446,7 +437,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_expertise_areas_hint_pres'
+  // Exported field_base: 'field_expertise_areas_hint_pres'.
   $field_bases['field_expertise_areas_hint_pres'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -460,9 +451,10 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'markup',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'markup' => array(
-        'format' => 'filtered_html',
-        'value' => '<p>Please indicate areas of expertise for which other ECSA members my  contact you. This information will only be visible on the internal  profile visible to members only.</p>',
+        'format' => 'namu_filtered_text',
+        'value' => '<p>Please indicate areas of expertise for which other ECSA members my contact you. This information will only be visible on the internal profile visible to members only.</p>',
       ),
       'profile2_private' => 0,
     ),
@@ -470,7 +462,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_expertise_areas_pres'
+  // Exported field_base: 'field_expertise_areas_pres'.
   $field_bases['field_expertise_areas_pres'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -478,7 +470,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_expertise_areas_pres',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -488,13 +480,14 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_facebook'
+  // Exported field_base: 'field_facebook'.
   $field_bases['field_facebook'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -502,7 +495,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_facebook',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -512,6 +505,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -519,7 +513,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_geofield'
+  // Exported field_base: 'field_geofield'.
   $field_bases['field_geofield'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -566,6 +560,7 @@ function ecsa_profiles_field_default_field_bases() {
     'module' => 'geofield',
     'settings' => array(
       'backend' => 'default',
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
       'srid' => 4326,
     ),
@@ -573,81 +568,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'geofield',
   );
 
-  // Exported field_base: 'field_individual_address'
-  $field_bases['field_individual_address'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_individual_address',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'addressfield',
-    'settings' => array(
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'addressfield',
-  );
-
-  // Exported field_base: 'field_individual_geofield'
-  $field_bases['field_individual_geofield'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_individual_geofield',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'bbox' => array(
-        0 => 'top',
-        1 => 'bottom',
-        2 => 'left',
-        3 => 'right',
-      ),
-      'bottom' => array(
-        0 => 'bottom',
-      ),
-      'centroid' => array(
-        0 => 'lat',
-        1 => 'lon',
-      ),
-      'geohash' => array(
-        0 => 'geohash',
-      ),
-      'lat' => array(
-        0 => 'lat',
-      ),
-      'left' => array(
-        0 => 'left',
-      ),
-      'lon' => array(
-        0 => 'lon',
-      ),
-      'right' => array(
-        0 => 'right',
-      ),
-      'top' => array(
-        0 => 'top',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'geofield',
-    'settings' => array(
-      'backend' => 'default',
-      'profile2_private' => 0,
-      'srid' => 4326,
-    ),
-    'translatable' => 0,
-    'type' => 'geofield',
-  );
-
-  // Exported field_base: 'field_individual_name'
+  // Exported field_base: 'field_individual_name'.
   $field_bases['field_individual_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -665,6 +586,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -672,7 +594,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_individual_surname'
+  // Exported field_base: 'field_individual_surname'.
   $field_bases['field_individual_surname'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -690,6 +612,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 60,
       'profile2_private' => 0,
     ),
@@ -697,7 +620,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_legal_status'
+  // Exported field_base: 'field_legal_status'.
   $field_bases['field_legal_status'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -705,7 +628,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_legal_status',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'value' => array(
@@ -720,13 +643,40 @@ function ecsa_profiles_field_default_field_bases() {
         'Non-Profit' => 'Non-Profit',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_membership_agreement'
+  // Exported field_base: 'field_link'.
+  $field_bases['field_link'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_link',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_membership_agreement'.
   $field_bases['field_membership_agreement'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -748,13 +698,14 @@ function ecsa_profiles_field_default_field_bases() {
         'I agree to the following condition of ECSA Membership' => 'I agree to the following condition of ECSA Membership',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_membership_agreement_hint'
+  // Exported field_base: 'field_membership_agreement_hint'.
   $field_bases['field_membership_agreement_hint'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -768,9 +719,10 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'markup',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'markup' => array(
-        'format' => 'full_html',
-        'value' => '<p style="text-align: justify;">In any event, as a condition of membership, ECSA members have a duty to act in accordance with the constitution, aims and objectives of ECSA during the period of their membership in ECSA. In particular, any act or omission by a relevant ECSA individual or institutional member, where such act or omission constitutes either a breach of ECSA membership conditions, applicable law or has the potential or actual effect of bringing ECSA into disrepute by continuing ECSA membership or affiliation, shall be the basis for the immediate cessation of membership by the offending individual or institution of ECSA. In all events, such an act or omission shall be brought to the attention of the ECSA Secretariat immediately by the offending institution.</p>',
+        'format' => 'namu_filtered_text',
+        'value' => '<p>In any event, as a condition of membership, ECSA members have a duty to act in accordance with the constitution, aims and objectives of ECSA during the period of their membership in ECSA. In particular, any act or omission by a relevant ECSA individual or institutional member, where such act or omission constitutes either a breach of ECSA membership conditions, applicable law or has the potential or actual effect of bringing ECSA into disrepute by continuing ECSA membership or affiliation, shall be the basis for the immediate cessation of membership by the offending individual or institution of ECSA. In all events, such an act or omission shall be brought to the attention of the ECSA Secretariat immediately by the offending institution.</p>',
       ),
       'profile2_private' => 0,
     ),
@@ -778,7 +730,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_motivation'
+  // Exported field_base: 'field_motivation'.
   $field_bases['field_motivation'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -786,7 +738,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_motivation',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -796,37 +748,14 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_network_eligibility_criter'
-  $field_bases['field_network_eligibility_criter'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_network_eligibility_criter',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'markup',
-    'settings' => array(
-      'markup' => array(
-        'format' => 'filtered_html',
-        'value' => '<p><strong>Please explain briefly if and how you are supporting the idea of citizen science through various channels or activities (ECSA network eligibility criteria).</strong></p>',
-      ),
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'markup',
-  );
-
-  // Exported field_base: 'field_network_name'
+  // Exported field_base: 'field_network_name'.
   $field_bases['field_network_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -834,7 +763,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_network_name',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -844,6 +773,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 60,
       'profile2_private' => 0,
     ),
@@ -851,7 +781,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_network_surname'
+  // Exported field_base: 'field_network_surname'.
   $field_bases['field_network_surname'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -859,7 +789,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_network_surname',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -869,6 +799,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 60,
       'profile2_private' => 0,
     ),
@@ -876,7 +807,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_network_working_group_hint'
+  // Exported field_base: 'field_network_working_group_hint'.
   $field_bases['field_network_working_group_hint'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -890,8 +821,9 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'markup',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'markup' => array(
-        'format' => 'filtered_html',
+        'format' => 'namu_filtered_text',
         'value' => '<p>ECSA Supporters have the possibility to join and contribute to ECSA Working Groups as observers. If you already know in which working group you would be interested, please tick the field. The working group chair will contact you.</p>',
       ),
       'profile2_private' => 0,
@@ -900,7 +832,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_occupation_type'
+  // Exported field_base: 'field_occupation_type'.
   $field_bases['field_occupation_type'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -929,13 +861,14 @@ function ecsa_profiles_field_default_field_bases() {
         'Other' => 'Other',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_occupation_type_other'
+  // Exported field_base: 'field_occupation_type_other'.
   $field_bases['field_occupation_type_other'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -953,6 +886,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -960,7 +894,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_org_affiliation_hint'
+  // Exported field_base: 'field_org_affiliation_hint'.
   $field_bases['field_org_affiliation_hint'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -974,8 +908,9 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'markup',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'markup' => array(
-        'format' => 'filtered_html',
+        'format' => 'namu_filtered_text',
         'value' => '<p>If applicable, please indicate the organization you are working in.</p>',
       ),
       'profile2_private' => 0,
@@ -984,7 +919,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_organisational_affiliation'
+  // Exported field_base: 'field_organisational_affiliation'.
   $field_bases['field_organisational_affiliation'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1002,6 +937,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1009,7 +945,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_address'
+  // Exported field_base: 'field_organization_address'.
   $field_bases['field_organization_address'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1017,19 +953,330 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_organization_address',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(),
     'locked' => 0,
     'module' => 'addressfield',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'addressfield',
   );
 
-  // Exported field_base: 'field_organization_del_surname'
+  // Exported field_base: 'field_organization_del2_email'.
+  $field_bases['field_organization_del2_email'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organization_del2_email',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_organization_del2_exp_area'.
+  $field_bases['field_organization_del2_exp_area'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organization_del2_exp_area',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_organization_del2_name'.
+  $field_bases['field_organization_del2_name'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organization_del2_name',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_organization_del2_phone'.
+  $field_bases['field_organization_del2_phone'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organization_del2_phone',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_organization_del2_surname'.
+  $field_bases['field_organization_del2_surname'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organization_del2_surname',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_organization_del2_url'.
+  $field_bases['field_organization_del2_url'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organization_del2_url',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_organization_del3_email'.
+  $field_bases['field_organization_del3_email'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organization_del3_email',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_organization_del3_exp_area'.
+  $field_bases['field_organization_del3_exp_area'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organization_del3_exp_area',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text_long',
+  );
+
+  // Exported field_base: 'field_organization_del3_name'.
+  $field_bases['field_organization_del3_name'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organization_del3_name',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_organization_del3_phone'.
+  $field_bases['field_organization_del3_phone'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organization_del3_phone',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_organization_del3_surname'.
+  $field_bases['field_organization_del3_surname'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organization_del3_surname',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_organization_del3_url'.
+  $field_bases['field_organization_del3_url'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_organization_del3_url',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'max_length' => 255,
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'text',
+  );
+
+  // Exported field_base: 'field_organization_del_surname'.
   $field_bases['field_organization_del_surname'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1037,7 +1284,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_organization_del_surname',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -1047,6 +1294,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 60,
       'profile2_private' => 0,
     ),
@@ -1054,7 +1302,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_delegate_name'
+  // Exported field_base: 'field_organization_delegate_name'.
   $field_bases['field_organization_delegate_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1062,7 +1310,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_organization_delegate_name',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -1072,6 +1320,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1079,7 +1328,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_delegate_url'
+  // Exported field_base: 'field_organization_delegate_url'.
   $field_bases['field_organization_delegate_url'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1087,7 +1336,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_organization_delegate_url',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -1097,6 +1346,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1104,13 +1354,16 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_delegateemail'
+  // Exported field_base: 'field_organization_delegateemail'.
   $field_bases['field_organization_delegateemail'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_organization_delegateemail',
+    'field_permissions' => array(
+      'type' => 2,
+    ),
     'indexes' => array(
       'format' => array(
         0 => 'format',
@@ -1119,13 +1372,15 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
+      'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_delegatephone'
+  // Exported field_base: 'field_organization_delegatephone'.
   $field_bases['field_organization_delegatephone'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1133,7 +1388,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_organization_delegatephone',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -1143,6 +1398,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1150,61 +1406,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_geofield'
-  $field_bases['field_organization_geofield'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organization_geofield',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'bbox' => array(
-        0 => 'top',
-        1 => 'bottom',
-        2 => 'left',
-        3 => 'right',
-      ),
-      'bottom' => array(
-        0 => 'bottom',
-      ),
-      'centroid' => array(
-        0 => 'lat',
-        1 => 'lon',
-      ),
-      'geohash' => array(
-        0 => 'geohash',
-      ),
-      'lat' => array(
-        0 => 'lat',
-      ),
-      'left' => array(
-        0 => 'left',
-      ),
-      'lon' => array(
-        0 => 'lon',
-      ),
-      'right' => array(
-        0 => 'right',
-      ),
-      'top' => array(
-        0 => 'top',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'geofield',
-    'settings' => array(
-      'backend' => 'default',
-      'profile2_private' => 0,
-      'srid' => 4326,
-    ),
-    'translatable' => 0,
-    'type' => 'geofield',
-  );
-
-  // Exported field_base: 'field_organization_goals'
+  // Exported field_base: 'field_organization_goals'.
   $field_bases['field_organization_goals'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1222,13 +1424,14 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_organization_leader_email'
+  // Exported field_base: 'field_organization_leader_email'.
   $field_bases['field_organization_leader_email'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1236,7 +1439,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_organization_leader_email',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -1246,6 +1449,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1253,7 +1457,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_leader_name'
+  // Exported field_base: 'field_organization_leader_name'.
   $field_bases['field_organization_leader_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1261,7 +1465,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_organization_leader_name',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -1271,6 +1475,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1278,7 +1483,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_leader_phone'
+  // Exported field_base: 'field_organization_leader_phone'.
   $field_bases['field_organization_leader_phone'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1286,7 +1491,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_organization_leader_phone',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -1296,6 +1501,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1303,7 +1509,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_leader_url'
+  // Exported field_base: 'field_organization_leader_url'.
   $field_bases['field_organization_leader_url'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1311,7 +1517,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_organization_leader_url',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -1321,6 +1527,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1328,7 +1535,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_logo'
+  // Exported field_base: 'field_organization_logo'.
   $field_bases['field_organization_logo'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1347,56 +1554,9 @@ function ecsa_profiles_field_default_field_bases() {
     'module' => 'image',
     'settings' => array(
       'default_image' => 0,
-      'profile2_private' => 0,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'image',
-  );
-
-  // Exported field_base: 'field_organization_logo_hint'
-  $field_bases['field_organization_logo_hint'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organization_logo_hint',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'markup',
-    'settings' => array(
-      'markup' => array(
-        'format' => 'full_html',
-        'value' => '<p style="text-align: justify;">&nbsp;<strong>Please upload a high and a low resolution version of your logo that will be used for the ECSA website and other materials in case of successful application.</strong></p>',
-      ),
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'markup',
-  );
-
-  // Exported field_base: 'field_organization_logo_low'
-  $field_bases['field_organization_logo_low'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organization_logo_low',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'fid' => array(
+      'entity_translation_sync' => array(
         0 => 'fid',
       ),
-    ),
-    'locked' => 0,
-    'module' => 'image',
-    'settings' => array(
-      'default_image' => 0,
       'profile2_private' => 0,
       'uri_scheme' => 'public',
     ),
@@ -1404,7 +1564,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_organization_name'
+  // Exported field_base: 'field_organization_name'.
   $field_bases['field_organization_name'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1422,6 +1582,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1429,7 +1590,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_name_en'
+  // Exported field_base: 'field_organization_name_en'.
   $field_bases['field_organization_name_en'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1447,6 +1608,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1454,7 +1616,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_pres_surname'
+  // Exported field_base: 'field_organization_pres_surname'.
   $field_bases['field_organization_pres_surname'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1462,7 +1624,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_organization_pres_surname',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -1472,6 +1634,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 60,
       'profile2_private' => 0,
     ),
@@ -1479,7 +1642,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_organization_type'
+  // Exported field_base: 'field_organization_type'.
   $field_bases['field_organization_type'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1508,13 +1671,14 @@ function ecsa_profiles_field_default_field_bases() {
         'Other' => 'Other',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_organization_type_other'
+  // Exported field_base: 'field_organization_type_other'.
   $field_bases['field_organization_type_other'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1532,6 +1696,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1539,7 +1704,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_other_contact'
+  // Exported field_base: 'field_other_contact'.
   $field_bases['field_other_contact'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1547,7 +1712,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_other_contact',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -1557,6 +1722,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1564,7 +1730,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_phone'
+  // Exported field_base: 'field_phone'.
   $field_bases['field_phone'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1572,7 +1738,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_phone',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -1582,6 +1748,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 64,
       'profile2_private' => 0,
     ),
@@ -1589,7 +1756,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_reduction_hint'
+  // Exported field_base: 'field_reduction_hint'.
   $field_bases['field_reduction_hint'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1603,8 +1770,9 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'markup',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'markup' => array(
-        'format' => 'filtered_html',
+        'format' => 'namu_filtered_text',
         'value' => '<p>Reduction is available for:</p>',
       ),
       'profile2_private' => 0,
@@ -1613,7 +1781,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_reduction_types'
+  // Exported field_base: 'field_reduction_types'.
   $field_bases['field_reduction_types'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1621,7 +1789,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_reduction_types',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 1,
     ),
     'indexes' => array(
       'value' => array(
@@ -1637,87 +1805,14 @@ function ecsa_profiles_field_default_field_bases() {
         'unemp' => 'Unemployed person',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_supporter_address'
-  $field_bases['field_supporter_address'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_supporter_address',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'addressfield',
-    'settings' => array(
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'addressfield',
-  );
-
-  // Exported field_base: 'field_supporter_geofield'
-  $field_bases['field_supporter_geofield'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_supporter_geofield',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'bbox' => array(
-        0 => 'top',
-        1 => 'bottom',
-        2 => 'left',
-        3 => 'right',
-      ),
-      'bottom' => array(
-        0 => 'bottom',
-      ),
-      'centroid' => array(
-        0 => 'lat',
-        1 => 'lon',
-      ),
-      'geohash' => array(
-        0 => 'geohash',
-      ),
-      'lat' => array(
-        0 => 'lat',
-      ),
-      'left' => array(
-        0 => 'left',
-      ),
-      'lon' => array(
-        0 => 'lon',
-      ),
-      'right' => array(
-        0 => 'right',
-      ),
-      'top' => array(
-        0 => 'top',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'geofield',
-    'settings' => array(
-      'backend' => 'default',
-      'profile2_private' => 0,
-      'srid' => 4326,
-    ),
-    'translatable' => 0,
-    'type' => 'geofield',
-  );
-
-  // Exported field_base: 'field_twitter'
+  // Exported field_base: 'field_twitter'.
   $field_bases['field_twitter'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1725,7 +1820,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_twitter',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -1735,6 +1830,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1742,7 +1838,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_upload_document'
+  // Exported field_base: 'field_upload_document'.
   $field_bases['field_upload_document'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1750,7 +1846,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_upload_document',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 1,
     ),
     'indexes' => array(
       'fid' => array(
@@ -1762,6 +1858,9 @@ function ecsa_profiles_field_default_field_bases() {
     'settings' => array(
       'display_default' => 0,
       'display_field' => 0,
+      'entity_translation_sync' => array(
+        0 => 'fid',
+      ),
       'profile2_private' => 0,
       'uri_scheme' => 'public',
     ),
@@ -1769,7 +1868,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'file',
   );
 
-  // Exported field_base: 'field_upload_hint'
+  // Exported field_base: 'field_upload_hint'.
   $field_bases['field_upload_hint'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1783,8 +1882,9 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'markup',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'markup' => array(
-        'format' => 'filtered_html',
+        'format' => 'namu_filtered_text',
         'value' => '<p>Please, upload an official document of your status.</p>',
       ),
       'profile2_private' => 0,
@@ -1793,7 +1893,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_vat'
+  // Exported field_base: 'field_vat'.
   $field_bases['field_vat'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1801,7 +1901,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_vat',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 1,
     ),
     'indexes' => array(
       'value' => array(
@@ -1816,13 +1916,14 @@ function ecsa_profiles_field_default_field_bases() {
         'No' => 'No',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_vat_number'
+  // Exported field_base: 'field_vat_number'.
   $field_bases['field_vat_number'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1830,7 +1931,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_vat_number',
     'field_permissions' => array(
-      'type' => 0,
+      'type' => 1,
     ),
     'indexes' => array(
       'format' => array(
@@ -1840,6 +1941,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1847,7 +1949,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_working_group_hint'
+  // Exported field_base: 'field_working_group_hint'.
   $field_bases['field_working_group_hint'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1861,9 +1963,10 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'markup',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'markup' => array(
-        'format' => 'full_html',
-        'value' => '<p style="text-align: justify;">ECSA Members are encouraged to join existing working groups or suggest new ones within ECSA. If you already know in which working group you would like to contribute, please tick the field. The working group chair will contact you.</p>',
+        'format' => 'namu_filtered_text',
+        'value' => '<p>ECSA Members are encouraged to join existing working groups or suggest new ones within ECSA. If you already know in which working group you would like to contribute, please tick the field. The working group chair will contact you.</p>',
       ),
       'profile2_private' => 0,
     ),
@@ -1871,7 +1974,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'markup',
   );
 
-  // Exported field_base: 'field_working_group_new'
+  // Exported field_base: 'field_working_group_new'.
   $field_bases['field_working_group_new'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -1889,6 +1992,7 @@ function ecsa_profiles_field_default_field_bases() {
     'locked' => 0,
     'module' => 'text',
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'max_length' => 255,
       'profile2_private' => 0,
     ),
@@ -1896,7 +2000,7 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_working_groups'
+  // Exported field_base: 'field_working_groups'.
   $field_bases['field_working_groups'] = array(
     'active' => 1,
     'cardinality' => 10,
@@ -1920,9 +2024,13 @@ function ecsa_profiles_field_default_field_bases() {
         'Policy, Strategy, Governance & Partnerships' => 'Policy, Strategy, Governance & Partnerships',
         'Principles & Standards in Citizen Science: Sharing Best Practice & Building Capacity' => 'Principles & Standards in Citizen Science: Sharing Best Practice & Building Capacity',
         'Projects, Data, Tools & Technology' => 'Projects, Data, Tools & Technology',
+        'Citizen Science & Responsible Research and Innovation' => 'Citizen Science & Responsible Research and Innovation',
+        'Learning & Education in Citizen Science' => 'Learning & Education in Citizen Science',
+        'BioBlitzers' => 'BioBlitzers',
         'I would like to suggest a working group' => 'I would like to suggest a working group',
       ),
       'allowed_values_function' => '',
+      'entity_translation_sync' => FALSE,
       'profile2_private' => 0,
     ),
     'translatable' => 0,

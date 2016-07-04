@@ -10,7 +10,7 @@
 function ecsa_profiles_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'profile2-individual_profile-field_account_hint'
+  // Exported field_instance: 'profile2-individual_profile-field_account_hint'.
   $field_instances['profile2-individual_profile-field_account_hint'] = array(
     'bundle' => 'individual_profile',
     'deleted' => 0,
@@ -18,8 +18,32 @@ function ecsa_profiles_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'markup',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 36,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 24,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'markup_default',
         'weight' => 23,
       ),
@@ -29,6 +53,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Account hint',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -36,12 +61,12 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 0,
+      'weight' => 1,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_citizen_science_hint'
+  // 'profile2-individual_profile-field_citizen_science_hint'.
   $field_instances['profile2-individual_profile-field_citizen_science_hint'] = array(
     'bundle' => 'individual_profile',
     'deleted' => 0,
@@ -50,7 +75,44 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 20,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 23,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'markup_default',
         'weight' => 24,
       ),
@@ -60,6 +122,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Citizen Science Project',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -71,7 +134,7 @@ function ecsa_profiles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-individual_profile-field_comments'
+  // Exported field_instance: 'profile2-individual_profile-field_comments'.
   $field_instances['profile2-individual_profile-field_comments'] = array(
     'bundle' => 'individual_profile',
     'default_value' => NULL,
@@ -81,16 +144,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 28,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 19,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_comments',
     'label' => 'Comments',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -101,11 +203,11 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
-  // Exported field_instance: 'profile2-individual_profile-field_contact_email'
+  // Exported field_instance: 'profile2-individual_profile-field_contact_email'.
   $field_instances['profile2-individual_profile-field_contact_email'] = array(
     'bundle' => 'individual_profile',
     'default_value' => NULL,
@@ -115,16 +217,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 4,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_contact_email',
     'label' => 'Email',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -135,12 +276,12 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 6,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_cs_expertise_area'
+  // 'profile2-individual_profile-field_cs_expertise_area'.
   $field_instances['profile2-individual_profile-field_cs_expertise_area'] = array(
     'bundle' => 'individual_profile',
     'default_value' => NULL,
@@ -150,7 +291,44 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 11,
       ),
@@ -160,6 +338,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Areas of expertise',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -170,12 +349,12 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_cs_organization_name'
+  // 'profile2-individual_profile-field_cs_organization_name'.
   $field_instances['profile2-individual_profile-field_cs_organization_name'] = array(
     'bundle' => 'individual_profile',
     'default_value' => NULL,
@@ -185,7 +364,44 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 23,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 32,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 31,
       ),
@@ -195,6 +411,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Organization running the project',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -210,7 +427,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_cs_project_contact'
+  // 'profile2-individual_profile-field_cs_project_contact'.
   $field_instances['profile2-individual_profile-field_cs_project_contact'] = array(
     'bundle' => 'individual_profile',
     'default_value' => NULL,
@@ -220,7 +437,44 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 27,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 31,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 30,
       ),
@@ -230,6 +484,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Project social media contacts',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -245,7 +500,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_cs_project_description'
+  // 'profile2-individual_profile-field_cs_project_description'.
   $field_instances['profile2-individual_profile-field_cs_project_description'] = array(
     'bundle' => 'individual_profile',
     'default_value' => NULL,
@@ -255,7 +510,44 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 24,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 28,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 27,
       ),
@@ -265,6 +557,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Brief description of project',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -280,7 +573,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_cs_project_geo_scale'
+  // 'profile2-individual_profile-field_cs_project_geo_scale'.
   $field_instances['profile2-individual_profile-field_cs_project_geo_scale'] = array(
     'bundle' => 'individual_profile',
     'default_value' => NULL,
@@ -290,7 +583,44 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 26,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 26,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'list_default',
         'weight' => 29,
       ),
@@ -300,19 +630,22 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Please indicate the approximate geographical scale of the project.',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
       'type' => 'options_select',
       'weight' => 24,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_cs_project_name'
+  // 'profile2-individual_profile-field_cs_project_name'.
   $field_instances['profile2-individual_profile-field_cs_project_name'] = array(
     'bundle' => 'individual_profile',
     'default_value' => NULL,
@@ -322,7 +655,44 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 21,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 25,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 25,
       ),
@@ -332,6 +702,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Name of Citizen Science Project',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -347,7 +718,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_cs_project_tags'
+  // 'profile2-individual_profile-field_cs_project_tags'.
   $field_instances['profile2-individual_profile-field_cs_project_tags'] = array(
     'bundle' => 'individual_profile',
     'default_value' => NULL,
@@ -357,7 +728,44 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 25,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 29,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'list_default',
         'weight' => 28,
       ),
@@ -367,18 +775,22 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Please choose from the following list of tags to describe the content of the project.',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
       'type' => 'options_select',
       'weight' => 23,
     ),
   );
 
-  // Exported field_instance: 'profile2-individual_profile-field_cs_project_url'
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_cs_project_url'.
   $field_instances['profile2-individual_profile-field_cs_project_url'] = array(
     'bundle' => 'individual_profile',
     'default_value' => NULL,
@@ -388,7 +800,44 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 22,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 27,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 26,
       ),
@@ -398,6 +847,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Project URL',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -413,7 +863,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_data_policy_hint'
+  // 'profile2-individual_profile-field_data_policy_hint'.
   $field_instances['profile2-individual_profile-field_data_policy_hint'] = array(
     'bundle' => 'individual_profile',
     'deleted' => 0,
@@ -421,8 +871,32 @@ function ecsa_profiles_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'markup',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 35,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 22,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'markup_default',
         'weight' => 22,
       ),
@@ -432,6 +906,660 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Data policy hint',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 22,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_eligibility_criteria'.
+  $field_instances['profile2-individual_profile-field_eligibility_criteria'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Please explain briefly if and how you are performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science, e.g. via funding or via communication (ECSA membership eligibility criteria).',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 16,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 16,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 15,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_eligibility_criteria',
+    'label' => 'How are you performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science?',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 16,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_expertise_area_hint'.
+  $field_instances['profile2-individual_profile-field_expertise_area_hint'] = array(
+    'bundle' => 'individual_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 12,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 12,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_expertise_area_hint',
+    'label' => 'Areas of expertise',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-individual_profile-field_facebook'.
+  $field_instances['profile2-individual_profile-field_facebook'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_facebook',
+    'label' => 'Facebook',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-individual_profile-field_geofield'.
+  $field_instances['profile2-individual_profile-field_geofield'] = array(
+    'bundle' => 'individual_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 34,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 38,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'geofield',
+        'settings' => array(
+          'data' => 'full',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'geofield_wkt',
+        'weight' => 39,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_geofield',
+    'label' => 'geofield',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'geocoder',
+      'settings' => array(
+        'delta_handling' => 'default',
+        'geocoder_field' => 'field_organization_address',
+        'geocoder_handler' => 'google',
+        'handler_settings' => array(
+          'google' => array(
+            'all_results' => 0,
+            'biasing' => array(
+              'bounds' => '',
+              'components' => '',
+              'region' => '',
+            ),
+            'geometry_type' => 'point',
+            'reject_results' => array(
+              'APPROXIMATE' => 0,
+              'GEOMETRIC_CENTER' => 0,
+              'RANGE_INTERPOLATED' => 0,
+              'ROOFTOP' => 0,
+            ),
+          ),
+        ),
+      ),
+      'type' => 'geocoder',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_individual_name'.
+  $field_instances['profile2-individual_profile-field_individual_name'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_individual_name',
+    'label' => 'First name',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_individual_surname'.
+  $field_instances['profile2-individual_profile-field_individual_surname'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_individual_surname',
+    'label' => 'Surname',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-individual_profile-field_link'.
+  $field_instances['profile2-individual_profile-field_link'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 39,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 40,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_link',
+    'label' => 'URL',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_membership_agreement'.
+  $field_instances['profile2-individual_profile-field_membership_agreement'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 37,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 20,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 20,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_membership_agreement',
+    'label' => 'ECSA Membership Agreement',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 20,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_membership_agreement_hint'.
+  $field_instances['profile2-individual_profile-field_membership_agreement_hint'] = array(
+    'bundle' => 'individual_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 33,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 21,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 21,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_membership_agreement_hint',
+    'label' => 'Agreement hint',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -443,9 +1571,8 @@ function ecsa_profiles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_eligibility_criteria'
-  $field_instances['profile2-individual_profile-field_eligibility_criteria'] = array(
+  // Exported field_instance: 'profile2-individual_profile-field_motivation'.
+  $field_instances['profile2-individual_profile-field_motivation'] = array(
     'bundle' => 'individual_profile',
     'default_value' => NULL,
     'deleted' => 0,
@@ -454,16 +1581,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 15,
       ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
-    'field_name' => 'field_eligibility_criteria',
-    'label' => 'Explanation',
+    'field_name' => 'field_motivation',
+    'label' => 'Please indicate your motivation to join ECSA.',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -479,8 +1645,597 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_eligibility_criteria_hint'
-  $field_instances['profile2-individual_profile-field_eligibility_criteria_hint'] = array(
+  // 'profile2-individual_profile-field_occupation_type'.
+  $field_instances['profile2-individual_profile-field_occupation_type'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 9,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 9,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_occupation_type',
+    'label' => 'Please select your type of occupation',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
+      'type' => 'options_select',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_occupation_type_other'.
+  $field_instances['profile2-individual_profile-field_occupation_type_other'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 10,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_occupation_type_other',
+    'label' => 'If other, please specify below.',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_org_affiliation_hint'.
+  $field_instances['profile2-individual_profile-field_org_affiliation_hint'] = array(
+    'bundle' => 'individual_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 38,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 30,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 33,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_org_affiliation_hint',
+    'label' => 'Organizational affiliation hint',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_organisational_affiliation'.
+  $field_instances['profile2-individual_profile-field_organisational_affiliation'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 34,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 34,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organisational_affiliation',
+    'label' => 'Organizational affiliation',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 10,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_organization_address'.
+  $field_instances['profile2-individual_profile-field_organization_address'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 2,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 40,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 41,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organization_address',
+    'label' => 'Address',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'addressfield',
+      'settings' => array(
+        'available_countries' => array(),
+        'default_country' => 'site_default',
+        'format_handlers' => array(
+          'address' => 'address',
+          'address-hide-postal-code' => 0,
+          'address-hide-street' => 0,
+          'address-hide-country' => 0,
+          'organisation' => 0,
+          'name-full' => 0,
+          'name-oneline' => 0,
+          'address-optional' => 0,
+        ),
+      ),
+      'type' => 'addressfield_standard',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_organization_logo'.
+  $field_instances['profile2-individual_profile-field_organization_logo'] = array(
+    'bundle' => 'individual_profile',
+    'deleted' => 0,
+    'description' => 'If you like, you can upload a picture of you here. Otherwhise the default ECSA member logo will be used. If you choose to upload a picture, please provide a high resolution image. ',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'image',
+        'weight' => 14,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organization_logo',
+    'label' => 'Picture',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 597,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '8 MB',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 0,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => 0,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 0,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-individual_profile-field_other_contact'.
+  $field_instances['profile2-individual_profile-field_other_contact'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_other_contact',
+    'label' => 'Other contact',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-individual_profile-field_phone'.
+  $field_instances['profile2-individual_profile-field_phone'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_phone',
+    'label' => 'Phone',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_reduction_hint'.
+  $field_instances['profile2-individual_profile-field_reduction_hint'] = array(
     'bundle' => 'individual_profile',
     'deleted' => 0,
     'description' => '',
@@ -488,16 +2243,1558 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'markup',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'markup_default',
-        'weight' => 14,
+        'weight' => 29,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 36,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 35,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_reduction_hint',
+    'label' => 'Reduction',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 22,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_reduction_types'.
+  $field_instances['profile2-individual_profile-field_reduction_types'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 30,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 33,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 36,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_reduction_types',
+    'label' => 'Reduction types',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 23,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-individual_profile-field_twitter'.
+  $field_instances['profile2-individual_profile-field_twitter'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 6,
       ),
     ),
     'entity_type' => 'profile2',
-    'field_name' => 'field_eligibility_criteria_hint',
-    'label' => 'Individual eligibility criteria hint',
+    'field_name' => 'field_twitter',
+    'label' => 'Twitter',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_upload_document'.
+  $field_instances['profile2-individual_profile-field_upload_document'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => array(),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'file_default',
+        'weight' => 32,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 37,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'file_default',
+        'weight' => 38,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_upload_document',
+    'label' => 'Upload document',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => '',
+      'file_extensions' => 'pdf',
+      'max_filesize' => '5 MB',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'file',
+      'settings' => array(
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'file_generic',
+      'weight' => 25,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-individual_profile-field_upload_hint'.
+  $field_instances['profile2-individual_profile-field_upload_hint'] = array(
+    'bundle' => 'individual_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 31,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 35,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 37,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_upload_hint',
+    'label' => 'Upload',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 24,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_working_group_hint'.
+  $field_instances['profile2-individual_profile-field_working_group_hint'] = array(
+    'bundle' => 'individual_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 17,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 16,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_working_group_hint',
+    'label' => 'ECSA Working Group Hint',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 22,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_working_group_new'.
+  $field_instances['profile2-individual_profile-field_working_group_new'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 19,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 19,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 18,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_working_group_new',
+    'label' => 'Suggest new Working Group on',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 24,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_working_groups'.
+  $field_instances['profile2-individual_profile-field_working_groups'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 18,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 18,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 17,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_working_groups',
+    'label' => 'Working groups',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 23,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_account_hint'.
+  $field_instances['profile2-organization_profile-field_account_hint'] = array(
+    'bundle' => 'organization_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 1,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 6,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 1,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_account_hint',
+    'label' => 'Account hint',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_citizen_science_hint'.
+  $field_instances['profile2-organization_profile-field_citizen_science_hint'] = array(
+    'bundle' => 'organization_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 29,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 35,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 29,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_citizen_science_hint',
+    'label' => 'Citizen Science Project',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 28,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-organization_profile-field_comments'.
+  $field_instances['profile2-organization_profile-field_comments'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 36,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 43,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 36,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_comments',
+    'label' => 'Comments',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 23,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_contact_email'.
+  $field_instances['profile2-organization_profile-field_contact_email'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_contact_email',
+    'label' => 'Email',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_cs_expertise_area'.
+  $field_instances['profile2-organization_profile-field_cs_expertise_area'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 32,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 42,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 32,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_expertise_area',
+    'label' => 'Areas of expertise',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 15,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_cs_project_contact'.
+  $field_instances['profile2-organization_profile-field_cs_project_contact'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 35,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 41,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 35,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_project_contact',
+    'label' => 'Project social media contacts',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 34,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_cs_project_description'.
+  $field_instances['profile2-organization_profile-field_cs_project_description'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 32,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 39,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 32,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_project_description',
+    'label' => 'Brief description of project',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 31,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_cs_project_geo_scale'.
+  $field_instances['profile2-organization_profile-field_cs_project_geo_scale'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Hold down the Ctrl key while selecting multiple items.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 34,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 44,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 34,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_project_geo_scale',
+    'label' => 'Please indicate the approximate geographical scale of the project.',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'select2_integration' => array(
+        'styling' => array(
+          'dropdownAutoWidth' => 0,
+          'placeholder' => '',
+        ),
+        'use_select2' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
+      'type' => 'options_select',
+      'weight' => 33,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_cs_project_name'.
+  $field_instances['profile2-organization_profile-field_cs_project_name'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 30,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 36,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 30,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_project_name',
+    'label' => 'Name of Citizen Science Project',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 29,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_cs_project_tags'.
+  $field_instances['profile2-organization_profile-field_cs_project_tags'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Hold down the Ctrl key while selecting multiple items.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 33,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 38,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 33,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_project_tags',
+    'label' => 'Please choose from the following list of tags to describe the content of the project.',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'select2_integration' => array(
+        'styling' => array(
+          'dropdownAutoWidth' => 0,
+          'placeholder' => '',
+        ),
+        'use_select2' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
+      'type' => 'options_select',
+      'weight' => 32,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_cs_project_url'.
+  $field_instances['profile2-organization_profile-field_cs_project_url'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 31,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 34,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 31,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_project_url',
+    'label' => 'Project URL',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 30,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_data_policy_hint'.
+  $field_instances['profile2-organization_profile-field_data_policy_hint'] = array(
+    'bundle' => 'organization_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 40,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 59,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 40,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_data_policy_hint',
+    'label' => 'Data policy hint',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 26,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_eligibility_criteria'.
+  $field_instances['profile2-organization_profile-field_eligibility_criteria'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Please explain briefly if and how you are performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science, e.g. via funding or via communication (ECSA membership eligibility criteria).',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 25,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 26,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 25,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_eligibility_criteria',
+    'label' => 'How are you performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science?',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 20,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_expertise_area_hint'.
+  $field_instances['profile2-organization_profile-field_expertise_area_hint'] = array(
+    'bundle' => 'organization_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 31,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 40,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 31,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_expertise_area_hint',
+    'label' => 'Areas of expertise',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -510,25 +3807,38 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_expertise_area_hint'
-  $field_instances['profile2-individual_profile-field_expertise_area_hint'] = array(
-    'bundle' => 'individual_profile',
+  // 'profile2-organization_profile-field_expertise_areas_hint_pres'.
+  $field_instances['profile2-organization_profile-field_expertise_areas_hint_pres'] = array(
+    'bundle' => 'organization_profile',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'markup',
         'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 12,
+        'type' => 'hidden',
+        'weight' => 37,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 56,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 37,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
-    'field_name' => 'field_expertise_area_hint',
-    'label' => 'Areas of expertise',
+    'field_name' => 'field_expertise_areas_hint_pres',
+    'label' => 'Areas of Expertise',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -536,13 +3846,14 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 10,
+      'weight' => 22,
     ),
   );
 
-  // Exported field_instance: 'profile2-individual_profile-field_facebook'
-  $field_instances['profile2-individual_profile-field_facebook'] = array(
-    'bundle' => 'individual_profile',
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_expertise_areas_pres'.
+  $field_instances['profile2-organization_profile-field_expertise_areas_pres'] = array(
+    'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -550,16 +3861,128 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 25,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 25,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 25,
       ),
     ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_expertise_areas_pres',
+    'label' => 'Areas of Expertise',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 23,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-organization_profile-field_facebook'.
+  $field_instances['profile2-organization_profile-field_facebook'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+    ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_facebook',
     'label' => 'Facebook',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -570,24 +3993,108 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 17,
     ),
   );
 
-  // Exported field_instance: 'profile2-individual_profile-field_geofield'
-  $field_instances['profile2-individual_profile-field_geofield'] = array(
-    'bundle' => 'individual_profile',
+  // Exported field_instance: 'profile2-organization_profile-field_geofield'.
+  $field_instances['profile2-organization_profile-field_geofield'] = array(
+    'bundle' => 'organization_profile',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'leaflet',
+        'settings' => array(
+          'height' => 200,
+          'icon' => array(
+            'html' => '',
+            'htmlClass' => '',
+            'iconAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'iconImageStyle' => '',
+            'iconSize' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'iconType' => 'marker',
+            'iconUrl' => '',
+            'popupAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'shadowAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'shadowUrl' => '',
+          ),
+          'leaflet_map' => 'OSM Mapnik',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'popup' => array(
+            'show' => 0,
+            'text' => '',
+          ),
+          'vector_display' => array(
+            'clickable' => 0,
+            'color' => '',
+            'dashArray' => '',
+            'fill' => 0,
+            'fillColor' => '',
+            'fillOpacity' => '',
+            'opacity' => '',
+            'stroke' => 0,
+            'stroke_override' => 0,
+            'weight' => '',
+          ),
+          'zoom' => array(
+            'initialZoom' => 6,
+            'maxZoom' => 10,
+            'minZoom' => 2,
+            'scrollWheelZoom' => 1,
+          ),
+        ),
+        'type' => 'geofield_leaflet',
+        'weight' => 4,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 9,
+      ),
+      'page' => array(
         'label' => 'above',
         'module' => 'geofield',
         'settings' => array(
           'data' => 'full',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
         ),
         'type' => 'geofield_wkt',
-        'weight' => 39,
+        'weight' => 4,
       ),
     ),
     'entity_type' => 'profile2',
@@ -595,6 +4102,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'geofield',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -602,7 +4110,7 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'geocoder',
       'settings' => array(
         'delta_handling' => 'default',
-        'geocoder_field' => 'field_individual_address',
+        'geocoder_field' => 'field_organization_address',
         'geocoder_handler' => 'google',
         'handler_settings' => array(
           'google' => array(
@@ -618,14 +4126,328 @@ function ecsa_profiles_field_default_field_instances() {
         ),
       ),
       'type' => 'geocoder',
-      'weight' => 27,
+      'weight' => 4,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_individual_address'
-  $field_instances['profile2-individual_profile-field_individual_address'] = array(
-    'bundle' => 'individual_profile',
+  // 'profile2-organization_profile-field_legal_status'.
+  $field_instances['profile2-organization_profile-field_legal_status'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 13,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 14,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 13,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_legal_status',
+    'label' => 'Legal status',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'select2_integration' => array(
+        'styling' => array(
+          'dropdownAutoWidth' => 0,
+          'placeholder' => '',
+        ),
+        'use_select2' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
+      'type' => 'options_select',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-organization_profile-field_link'.
+  $field_instances['profile2-organization_profile-field_link'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_link',
+    'label' => 'URL',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_membership_agreement'.
+  $field_instances['profile2-organization_profile-field_membership_agreement'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 38,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 57,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 38,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_membership_agreement',
+    'label' => 'ECSA Membership Agreement',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 24,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_membership_agreement_hint'.
+  $field_instances['profile2-organization_profile-field_membership_agreement_hint'] = array(
+    'bundle' => 'organization_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 39,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 58,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 39,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_membership_agreement_hint',
+    'label' => 'Agreement hint',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 25,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-organization_profile-field_motivation'.
+  $field_instances['profile2-organization_profile-field_motivation'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 22,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 22,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 22,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_motivation',
+    'label' => 'Please indicate your motivation to join ECSA.',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 18,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_organization_address'.
+  $field_instances['profile2-organization_profile-field_organization_address'] = array(
+    'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -637,17 +4459,59 @@ function ecsa_profiles_field_default_field_instances() {
           'format_handlers' => array(
             0 => 'address',
           ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
-        'weight' => 2,
+        'weight' => 3,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 3,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
-    'field_name' => 'field_individual_address',
-    'label' => 'Address',
+    'field_name' => 'field_organization_address',
+    'label' => 'Address of the organization/project',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -673,839 +4537,65 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-individual_profile-field_individual_geofield'
-  $field_instances['profile2-individual_profile-field_individual_geofield'] = array(
-    'bundle' => 'individual_profile',
+  // 'profile2-organization_profile-field_organization_del2_email'.
+  $field_instances['profile2-organization_profile-field_organization_del2_email'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 32,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_individual_geofield',
-    'label' => 'Individual Geofield',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'geocoder',
-      'settings' => array(
-        'delta_handling' => 'default',
-        'geocoder_field' => 'field_individual_address',
-        'geocoder_handler' => 'google',
-        'handler_settings' => array(
-          'google' => array(
-            'all_results' => 0,
-            'geometry_type' => 'point',
-            'reject_results' => array(
-              'APPROXIMATE' => 0,
-              'GEOMETRIC_CENTER' => 0,
-              'RANGE_INTERPOLATED' => 0,
-              'ROOFTOP' => 0,
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
             ),
+            'destination' => '',
+            'linked' => 0,
           ),
         ),
+        'type' => 'text_default',
+        'weight' => 55,
       ),
-      'type' => 'geocoder',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_individual_name'
-  $field_instances['profile2-individual_profile-field_individual_name'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 54,
+      ),
+      'page' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_individual_name',
-    'label' => 'Name',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_individual_surname'
-  $field_instances['profile2-individual_profile-field_individual_surname'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_individual_surname',
-    'label' => 'Surname',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-individual_profile-field_link'
-  $field_instances['profile2-individual_profile-field_link'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_link',
-    'label' => 'URL',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_membership_agreement'
-  $field_instances['profile2-individual_profile-field_membership_agreement'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 20,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_membership_agreement',
-    'label' => 'ECSA Membership Agreement',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 19,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_membership_agreement_hint'
-  $field_instances['profile2-individual_profile-field_membership_agreement_hint'] = array(
-    'bundle' => 'individual_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 21,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_membership_agreement_hint',
-    'label' => 'Agreement hint',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 20,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-individual_profile-field_motivation'
-  $field_instances['profile2-individual_profile-field_motivation'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 13,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_motivation',
-    'label' => 'Please indicate your motivation to join ECSA.',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 13,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_occupation_type'
-  $field_instances['profile2-individual_profile-field_occupation_type'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 9,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_occupation_type',
-    'label' => 'Please select your type of occupation',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_occupation_type_other'
-  $field_instances['profile2-individual_profile-field_occupation_type_other'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 10,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_occupation_type_other',
-    'label' => 'If other, please specify below.',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_org_affiliation_hint'
-  $field_instances['profile2-individual_profile-field_org_affiliation_hint'] = array(
-    'bundle' => 'individual_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 33,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_org_affiliation_hint',
-    'label' => 'Organizational affiliation hint',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_organisational_affiliation'
-  $field_instances['profile2-individual_profile-field_organisational_affiliation'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 34,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organisational_affiliation',
-    'label' => 'Organizational affiliation',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 9,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-individual_profile-field_other_contact'
-  $field_instances['profile2-individual_profile-field_other_contact'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 8,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_other_contact',
-    'label' => 'Other contact',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 13,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-individual_profile-field_phone'
-  $field_instances['profile2-individual_profile-field_phone'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 5,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_phone',
-    'label' => 'Phone',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 9,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-individual_profile-field_reduction_hint'
-  $field_instances['profile2-individual_profile-field_reduction_hint'] = array(
-    'bundle' => 'individual_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 35,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_reduction_hint',
-    'label' => 'Reduction',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 22,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_reduction_types'
-  $field_instances['profile2-individual_profile-field_reduction_types'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 36,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_reduction_types',
-    'label' => 'Reduction types',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 23,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-individual_profile-field_twitter'
-  $field_instances['profile2-individual_profile-field_twitter'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 6,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_twitter',
-    'label' => 'Twitter',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 11,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_upload_document'
-  $field_instances['profile2-individual_profile-field_upload_document'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => array(),
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
-        'weight' => 38,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_upload_document',
-    'label' => 'Upload document',
-    'required' => 0,
-    'settings' => array(
-      'description_field' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'pdf',
-      'max_filesize' => '5 MB',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'file',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
         ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'default' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'file_generic',
-      'weight' => 25,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-individual_profile-field_upload_hint'
-  $field_instances['profile2-individual_profile-field_upload_hint'] = array(
-    'bundle' => 'individual_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 37,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_upload_hint',
-    'label' => 'Upload',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 24,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_working_group_hint'
-  $field_instances['profile2-individual_profile-field_working_group_hint'] = array(
-    'bundle' => 'individual_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 16,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_working_group_hint',
-    'label' => 'ECSA Working Group Hint',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 22,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-individual_profile-field_working_group_new'
-  $field_instances['profile2-individual_profile-field_working_group_new'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 55,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
-    'field_name' => 'field_working_group_new',
-    'label' => 'Suggest new Working Group on',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 24,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-individual_profile-field_working_groups'
-  $field_instances['profile2-individual_profile-field_working_groups'] = array(
-    'bundle' => 'individual_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 17,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_working_groups',
-    'label' => 'Working groups',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 23,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-organization_profile-field_account_hint'
-  $field_instances['profile2-organization_profile-field_account_hint'] = array(
-    'bundle' => 'organization_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 42,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_account_hint',
-    'label' => 'Account hint',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_citizen_science_hint'
-  $field_instances['profile2-organization_profile-field_citizen_science_hint'] = array(
-    'bundle' => 'organization_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 43,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_citizen_science_hint',
-    'label' => 'Citizen Science Project',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 26,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-organization_profile-field_comments'
-  $field_instances['profile2-organization_profile-field_comments'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 37,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_comments',
-    'label' => 'Comments',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 22,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_contact_email'
-  $field_instances['profile2-organization_profile-field_contact_email'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 41,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_contact_email',
+    'field_name' => 'field_organization_del2_email',
     'label' => 'Email',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1516,13 +4606,13 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 30,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_cs_expertise_area'
-  $field_instances['profile2-organization_profile-field_cs_expertise_area'] = array(
+  // 'profile2-organization_profile-field_organization_del2_exp_area'.
+  $field_instances['profile2-organization_profile-field_organization_del2_exp_area'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
@@ -1531,16 +4621,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 24,
+        'weight' => 56,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 55,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 56,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
-    'field_name' => 'field_cs_expertise_area',
+    'field_name' => 'field_organization_del2_exp_area',
     'label' => 'Areas of expertise',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1551,115 +4680,13 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 15,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_cs_project_contact'
-  $field_instances['profile2-organization_profile-field_cs_project_contact'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 49,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_cs_project_contact',
-    'label' => 'Project social media contacts',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 32,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_cs_project_description'
-  $field_instances['profile2-organization_profile-field_cs_project_description'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 46,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_cs_project_description',
-    'label' => 'Brief description of project',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 29,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_cs_project_geo_scale'
-  $field_instances['profile2-organization_profile-field_cs_project_geo_scale'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Hold down the <Ctrl> key while selecting multiple items.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 48,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_cs_project_geo_scale',
-    'label' => 'Please indicate the approximate geographical scale of the project.',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
       'weight' => 31,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_cs_project_name'
-  $field_instances['profile2-organization_profile-field_cs_project_name'] = array(
+  // 'profile2-organization_profile-field_organization_del2_name'.
+  $field_instances['profile2-organization_profile-field_organization_del2_name'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
@@ -1668,16 +4695,203 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 44,
+        'weight' => 51,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 51,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 51,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
-    'field_name' => 'field_cs_project_name',
-    'label' => 'Name of Citizen Science Project',
+    'field_name' => 'field_organization_del2_name',
+    'label' => 'First name',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 26,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_organization_del2_phone'.
+  $field_instances['profile2-organization_profile-field_organization_del2_phone'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 54,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 46,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 54,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organization_del2_phone',
+    'label' => 'Phone',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 29,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_organization_del2_surname'.
+  $field_instances['profile2-organization_profile-field_organization_del2_surname'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 52,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 52,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 52,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organization_del2_surname',
+    'label' => 'Surname',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1693,40 +4907,8 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_cs_project_tags'
-  $field_instances['profile2-organization_profile-field_cs_project_tags'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Hold down the <Ctrl> key while selecting multiple items.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 47,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_cs_project_tags',
-    'label' => 'Please choose from the following list of tags to describe the content of the project.',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 30,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_cs_project_url'
-  $field_instances['profile2-organization_profile-field_cs_project_url'] = array(
+  // 'profile2-organization_profile-field_organization_del2_url'.
+  $field_instances['profile2-organization_profile-field_organization_del2_url'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
@@ -1735,16 +4917,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 45,
+        'weight' => 53,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 53,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 53,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
-    'field_name' => 'field_cs_project_url',
-    'label' => 'Project URL',
+    'field_name' => 'field_organization_del2_url',
+    'label' => 'URL',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1760,39 +4981,8 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_data_policy_hint'
-  $field_instances['profile2-organization_profile-field_data_policy_hint'] = array(
-    'bundle' => 'organization_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 40,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_data_policy_hint',
-    'label' => 'Data policy hint',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 25,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_eligibility_criteria'
-  $field_instances['profile2-organization_profile-field_eligibility_criteria'] = array(
+  // 'profile2-organization_profile-field_organization_del3_email'.
+  $field_instances['profile2-organization_profile-field_organization_del3_email'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
@@ -1801,16 +4991,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 33,
+        'weight' => 41,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 49,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 41,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
-    'field_name' => 'field_eligibility_criteria',
-    'label' => 'Explanation',
-    'required' => 1,
+    'field_name' => 'field_organization_del3_email',
+    'label' => 'Email',
+    'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1818,127 +5047,54 @@ function ecsa_profiles_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 3,
+        'size' => 60,
       ),
-      'type' => 'text_textarea',
-      'weight' => 19,
+      'type' => 'text_textfield',
+      'weight' => 31,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_eligibility_criteria_hint'
-  $field_instances['profile2-organization_profile-field_eligibility_criteria_hint'] = array(
+  // 'profile2-organization_profile-field_organization_del3_exp_area'.
+  $field_instances['profile2-organization_profile-field_organization_del3_exp_area'] = array(
     'bundle' => 'organization_profile',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 32,
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 42,
       ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_eligibility_criteria_hint',
-    'label' => 'Organization eligibility criteria hint',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 18,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_expertise_area_hint'
-  $field_instances['profile2-organization_profile-field_expertise_area_hint'] = array(
-    'bundle' => 'organization_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
+      'member_proifile_view' => array(
         'label' => 'above',
-        'module' => 'markup',
         'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 25,
+        'type' => 'hidden',
+        'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
-    'field_name' => 'field_expertise_area_hint',
+    'field_name' => 'field_organization_del3_exp_area',
     'label' => 'Areas of expertise',
     'required' => 0,
     'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 13,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_expertise_areas_hint_pres'
-  $field_instances['profile2-organization_profile-field_expertise_areas_hint_pres'] = array(
-    'bundle' => 'organization_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 20,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_expertise_areas_hint_pres',
-    'label' => 'Areas of Expertise',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 22,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_expertise_areas_pres'
-  $field_instances['profile2-organization_profile-field_expertise_areas_pres'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 21,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_expertise_areas_pres',
-    'label' => 'Areas of Expertise',
-    'required' => 0,
-    'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -1949,160 +5105,13 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 23,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-organization_profile-field_facebook'
-  $field_instances['profile2-organization_profile-field_facebook'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 6,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_facebook',
-    'label' => 'Facebook',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 10,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-organization_profile-field_geofield'
-  $field_instances['profile2-organization_profile-field_geofield'] = array(
-    'bundle' => 'organization_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'geofield',
-        'settings' => array(
-          'data' => 'full',
-        ),
-        'type' => 'geofield_wkt',
-        'weight' => 52,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_geofield',
-    'label' => 'geofield',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'geocoder',
-      'settings' => array(
-        'delta_handling' => 'default',
-        'geocoder_field' => 'field_organization_address',
-        'geocoder_handler' => 'google',
-        'handler_settings' => array(
-          'google' => array(
-            'all_results' => 0,
-            'geometry_type' => 'point',
-            'reject_results' => array(
-              'APPROXIMATE' => 0,
-              'GEOMETRIC_CENTER' => 0,
-              'RANGE_INTERPOLATED' => 0,
-              'ROOFTOP' => 0,
-            ),
-          ),
-        ),
-      ),
-      'type' => 'geocoder',
-      'weight' => 33,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-organization_profile-field_legal_status'
-  $field_instances['profile2-organization_profile-field_legal_status'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 10,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_legal_status',
-    'label' => 'Legal status',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-organization_profile-field_link'
-  $field_instances['profile2-organization_profile-field_link'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_link',
-    'label' => 'URL',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 32,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_membership_agreement'
-  $field_instances['profile2-organization_profile-field_membership_agreement'] = array(
+  // 'profile2-organization_profile-field_organization_del3_name'.
+  $field_instances['profile2-organization_profile-field_organization_del3_name'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
@@ -2110,61 +5119,221 @@ function ecsa_profiles_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'list',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 37,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
-        'type' => 'list_default',
+        'type' => 'hidden',
+        'weight' => 45,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 37,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organization_del3_name',
+    'label' => 'First name',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 27,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_organization_del3_phone'.
+  $field_instances['profile2-organization_profile-field_organization_del3_phone'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 40,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 50,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 40,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organization_del3_phone',
+    'label' => 'Phone',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 30,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_organization_del3_surname'.
+  $field_instances['profile2-organization_profile-field_organization_del3_surname'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 38,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 48,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
         'weight' => 38,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
-    'field_name' => 'field_membership_agreement',
-    'label' => 'ECSA Membership Agreement',
-    'required' => 1,
+    'field_name' => 'field_organization_del3_surname',
+    'label' => 'Surname',
+    'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 23,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 28,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_membership_agreement_hint'
-  $field_instances['profile2-organization_profile-field_membership_agreement_hint'] = array(
-    'bundle' => 'organization_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 39,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_membership_agreement_hint',
-    'label' => 'Agreement hint',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 24,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-organization_profile-field_motivation'
-  $field_instances['profile2-organization_profile-field_motivation'] = array(
+  // 'profile2-organization_profile-field_organization_del3_url'.
+  $field_instances['profile2-organization_profile-field_organization_del3_url'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
@@ -2173,16 +5342,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 29,
+        'weight' => 39,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 47,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 39,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
-    'field_name' => 'field_motivation',
-    'label' => 'Please indicate your motivation to join ECSA.',
-    'required' => 1,
+    'field_name' => 'field_organization_del3_url',
+    'label' => 'URL',
+    'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2190,65 +5398,15 @@ function ecsa_profiles_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'rows' => 3,
+        'size' => 60,
       ),
-      'type' => 'text_textarea',
-      'weight' => 17,
+      'type' => 'text_textfield',
+      'weight' => 29,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_address'
-  $field_instances['profile2-organization_profile-field_organization_address'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'addressfield',
-        'settings' => array(
-          'format_handlers' => array(
-            0 => 'address',
-          ),
-          'use_widget_handlers' => 1,
-        ),
-        'type' => 'addressfield_default',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_address',
-    'label' => 'Address of the organization/project',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'addressfield',
-      'settings' => array(
-        'available_countries' => array(),
-        'default_country' => 'DE',
-        'format_handlers' => array(
-          'address' => 'address',
-          'address-hide-postal-code' => 0,
-          'address-hide-street' => 0,
-          'address-hide-country' => 0,
-          'organisation' => 0,
-          'name-full' => 0,
-          'name-oneline' => 0,
-          'address-optional' => 0,
-        ),
-      ),
-      'type' => 'addressfield_standard',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_del_surname'
+  // 'profile2-organization_profile-field_organization_del_surname'.
   $field_instances['profile2-organization_profile-field_organization_del_surname'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2258,16 +5416,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 27,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 30,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 27,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_del_surname',
     'label' => 'Surname',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2283,7 +5480,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_delegate_name'
+  // 'profile2-organization_profile-field_organization_delegate_name'.
   $field_instances['profile2-organization_profile-field_organization_delegate_name'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2293,16 +5490,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 23,
+        'weight' => 26,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 28,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 26,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_delegate_name',
-    'label' => 'Name',
+    'label' => 'First name',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2318,7 +5554,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_delegate_url'
+  // 'profile2-organization_profile-field_organization_delegate_url'.
   $field_instances['profile2-organization_profile-field_organization_delegate_url'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2328,16 +5564,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 26,
+        'weight' => 28,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 33,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 28,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_delegate_url',
     'label' => 'URL',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2353,7 +5628,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_delegateemail'
+  // 'profile2-organization_profile-field_organization_delegateemail'.
   $field_instances['profile2-organization_profile-field_organization_delegateemail'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2363,20 +5638,134 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 28,
+        'weight' => 30,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 37,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 30,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_delegateemail',
     'label' => 'Email',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 13,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_organization_delegatephone'.
+  $field_instances['profile2-organization_profile-field_organization_delegatephone'] = array(
+    'bundle' => 'organization_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 29,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 29,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 29,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organization_delegatephone',
+    'label' => 'Phone',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'size' => 60,
@@ -2387,88 +5776,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_delegatephone'
-  $field_instances['profile2-organization_profile-field_organization_delegatephone'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 27,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_delegatephone',
-    'label' => 'Phone',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 11,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_geofield'
-  $field_instances['profile2-organization_profile-field_organization_geofield'] = array(
-    'bundle' => 'organization_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 51,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_geofield',
-    'label' => 'Organization Geofield',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'geocoder',
-      'settings' => array(
-        'delta_handling' => 'default',
-        'geocoder_field' => 'field_organization_address',
-        'geocoder_handler' => 'google',
-        'handler_settings' => array(
-          'google' => array(
-            'all_results' => 0,
-            'geometry_type' => 'point',
-            'reject_results' => array(
-              'APPROXIMATE' => 0,
-              'GEOMETRIC_CENTER' => 0,
-              'RANGE_INTERPOLATED' => 0,
-              'ROOFTOP' => 0,
-            ),
-          ),
-        ),
-      ),
-      'type' => 'geocoder',
-      'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_goals'
+  // 'profile2-organization_profile-field_organization_goals'.
   $field_instances['profile2-organization_profile-field_organization_goals'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2478,9 +5786,46 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 16,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 19,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 16,
       ),
     ),
     'entity_type' => 'profile2',
@@ -2488,6 +5833,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Please indicate the mandate/goals/activities of your organization/project.',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2503,7 +5849,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_leader_email'
+  // 'profile2-organization_profile-field_organization_leader_email'.
   $field_instances['profile2-organization_profile-field_organization_leader_email'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2513,16 +5859,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 23,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 24,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 23,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_leader_email',
     'label' => 'Email',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2538,7 +5923,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_leader_name'
+  // 'profile2-organization_profile-field_organization_leader_name'.
   $field_instances['profile2-organization_profile-field_organization_leader_name'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2548,16 +5933,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 19,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 15,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 19,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_leader_name',
-    'label' => 'Name',
+    'label' => 'First name',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2573,7 +5997,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_leader_phone'
+  // 'profile2-organization_profile-field_organization_leader_phone'.
   $field_instances['profile2-organization_profile-field_organization_leader_phone'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2583,16 +6007,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 18,
+        'weight' => 22,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 21,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 22,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_leader_phone',
     'label' => 'Phone',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2608,7 +6071,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_leader_url'
+  // 'profile2-organization_profile-field_organization_leader_url'.
   $field_instances['profile2-organization_profile-field_organization_leader_url'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2618,16 +6081,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 17,
+        'weight' => 21,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 20,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 21,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_leader_url',
     'label' => 'URL',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2643,11 +6145,11 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_logo'
+  // 'profile2-organization_profile-field_organization_logo'.
   $field_instances['profile2-organization_profile-field_organization_logo'] = array(
     'bundle' => 'organization_profile',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Please provide a high resolution file.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2655,18 +6157,73 @@ function ecsa_profiles_field_default_field_instances() {
         'settings' => array(
           'image_link' => '',
           'image_style' => '',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
         ),
         'type' => 'image',
-        'weight' => 14,
+        'weight' => 17,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => 'content',
+          'image_style' => 'medium',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 1,
+          ),
+        ),
+        'type' => 'image',
+        'weight' => 0,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'image',
+        'weight' => 17,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_logo',
-    'label' => 'High resolution logo',
-    'required' => 1,
+    'label' => 'Logo',
+    'required' => 0,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 0,
+      'default_image' => 487,
+      'entity_translation_sync' => FALSE,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '8 MB',
@@ -2679,6 +6236,18 @@ function ecsa_profiles_field_default_field_instances() {
       'active' => 1,
       'module' => 'image',
       'settings' => array(
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 0,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => 0,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 0,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
@@ -2688,83 +6257,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_logo_hint'
-  $field_instances['profile2-organization_profile-field_organization_logo_hint'] = array(
-    'bundle' => 'organization_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 30,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_logo_hint',
-    'label' => 'Organization Logo Hint',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 12,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_logo_low'
-  $field_instances['profile2-organization_profile-field_organization_logo_low'] = array(
-    'bundle' => 'organization_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 31,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_logo_low',
-    'label' => 'Low resolution logo',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '1 MB',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 14,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_name'
+  // 'profile2-organization_profile-field_organization_name'.
   $field_instances['profile2-organization_profile-field_organization_name'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2774,7 +6267,44 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
         'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 60,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 0,
       ),
@@ -2784,6 +6314,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Name of the organization/project in the original language',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2799,7 +6330,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_name_en'
+  // 'profile2-organization_profile-field_organization_name_en'.
   $field_instances['profile2-organization_profile-field_organization_name_en'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2809,9 +6340,59 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 1,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'profile2',
@@ -2819,6 +6400,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Name of the organization/project in English',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2834,7 +6416,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_pres_surname'
+  // 'profile2-organization_profile-field_organization_pres_surname'.
   $field_instances['profile2-organization_profile-field_organization_pres_surname'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2844,16 +6426,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 22,
+        'weight' => 20,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 20,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_pres_surname',
     'label' => 'Surname',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2869,7 +6490,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_type'
+  // 'profile2-organization_profile-field_organization_type'.
   $field_instances['profile2-organization_profile-field_organization_type'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2879,9 +6500,46 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'list',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'list_default',
-        'weight' => 8,
+        'weight' => 11,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 13,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 11,
       ),
     ),
     'entity_type' => 'profile2',
@@ -2889,19 +6547,22 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Please select the type of your organization/project',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
       'type' => 'options_select',
       'weight' => 6,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_type_other'
+  // 'profile2-organization_profile-field_organization_type_other'.
   $field_instances['profile2-organization_profile-field_organization_type_other'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2911,9 +6572,46 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 12,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 12,
       ),
     ),
     'entity_type' => 'profile2',
@@ -2921,6 +6619,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'If other, please specify below',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2936,7 +6635,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_other_contact'
+  // 'profile2-organization_profile-field_other_contact'.
   $field_instances['profile2-organization_profile-field_other_contact'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2946,16 +6645,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 10,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 10,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_other_contact',
     'label' => 'Other contact',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -2966,11 +6704,11 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 18,
     ),
   );
 
-  // Exported field_instance: 'profile2-organization_profile-field_phone'
+  // Exported field_instance: 'profile2-organization_profile-field_phone'.
   $field_instances['profile2-organization_profile-field_phone'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -2980,16 +6718,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 6,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 8,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 6,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_phone',
     'label' => 'Phone',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3000,11 +6777,11 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 13,
     ),
   );
 
-  // Exported field_instance: 'profile2-organization_profile-field_twitter'
+  // Exported field_instance: 'profile2-organization_profile-field_twitter'.
   $field_instances['profile2-organization_profile-field_twitter'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -3014,16 +6791,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 7,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 7,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_twitter',
     'label' => 'Twitter',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3034,11 +6850,11 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 16,
     ),
   );
 
-  // Exported field_instance: 'profile2-organization_profile-field_vat'
+  // Exported field_instance: 'profile2-organization_profile-field_vat'.
   $field_instances['profile2-organization_profile-field_vat'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -3048,28 +6864,76 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'list',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'list_default',
-        'weight' => 11,
+        'weight' => 14,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 14,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_vat',
     'label' => 'Please indicate your organization’s/projects VAT number, if applicable.',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'select2_integration' => array(
+        'styling' => array(
+          'dropdownAutoWidth' => 0,
+          'placeholder' => '',
+        ),
+        'use_select2' => 0,
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
       'module' => 'options',
-      'settings' => array(),
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
       'type' => 'options_select',
       'weight' => 9,
     ),
   );
 
-  // Exported field_instance: 'profile2-organization_profile-field_vat_number'
+  // Exported field_instance: 'profile2-organization_profile-field_vat_number'.
   $field_instances['profile2-organization_profile-field_vat_number'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -3079,16 +6943,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 15,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 18,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 15,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_vat_number',
     'label' => 'VAT Number',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3104,7 +7007,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_working_group_hint'
+  // 'profile2-organization_profile-field_working_group_hint'.
   $field_instances['profile2-organization_profile-field_working_group_hint'] = array(
     'bundle' => 'organization_profile',
     'deleted' => 0,
@@ -3113,16 +7016,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'markup',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'markup_default',
-        'weight' => 34,
+        'weight' => 26,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 27,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 26,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_working_group_hint',
     'label' => 'ECSA Working Group Hint',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3135,7 +7077,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_working_group_new'
+  // 'profile2-organization_profile-field_working_group_new'.
   $field_instances['profile2-organization_profile-field_working_group_new'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -3145,9 +7087,46 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 36,
+        'weight' => 28,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 32,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 28,
       ),
     ),
     'entity_type' => 'profile2',
@@ -3155,6 +7134,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Suggest new Working Group on',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3170,7 +7150,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_working_groups'
+  // 'profile2-organization_profile-field_working_groups'.
   $field_instances['profile2-organization_profile-field_working_groups'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
@@ -3180,16 +7160,55 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'list',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'list_default',
-        'weight' => 35,
+        'weight' => 27,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 31,
+      ),
+      'page' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 27,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_working_groups',
     'label' => 'Working groups',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3201,7 +7220,7 @@ function ecsa_profiles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-supporter_profile-field_account_hint'
+  // Exported field_instance: 'profile2-supporter_profile-field_account_hint'.
   $field_instances['profile2-supporter_profile-field_account_hint'] = array(
     'bundle' => 'supporter_profile',
     'deleted' => 0,
@@ -3209,10 +7228,9 @@ function ecsa_profiles_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'markup',
         'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 25,
+        'type' => 'hidden',
+        'weight' => 26,
       ),
     ),
     'entity_type' => 'profile2',
@@ -3220,6 +7238,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Account hint',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3231,7 +7250,52 @@ function ecsa_profiles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-supporter_profile-field_comments'
+  // Exported field_instance:
+  // 'profile2-supporter_profile-field_citizen_science_hint'.
+  $field_instances['profile2-supporter_profile-field_citizen_science_hint'] = array(
+    'bundle' => 'supporter_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 28,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_citizen_science_hint',
+    'label' => 'Citizen Science Project',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 51,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-supporter_profile-field_comments'.
   $field_instances['profile2-supporter_profile-field_comments'] = array(
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
@@ -3241,16 +7305,30 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 23,
+        'weight' => 22,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_comments',
     'label' => 'Comments',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3261,11 +7339,11 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 18,
+      'weight' => 16,
     ),
   );
 
-  // Exported field_instance: 'profile2-supporter_profile-field_contact_email'
+  // Exported field_instance: 'profile2-supporter_profile-field_contact_email'.
   $field_instances['profile2-supporter_profile-field_contact_email'] = array(
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
@@ -3275,16 +7353,30 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 8,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_contact_email',
     'label' => 'Email',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3300,7 +7392,312 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-supporter_profile-field_data_policy_hint'
+  // 'profile2-supporter_profile-field_cs_project_contact'.
+  $field_instances['profile2-supporter_profile-field_cs_project_contact'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 34,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_project_contact',
+    'label' => 'Project social media contacts',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 57,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-supporter_profile-field_cs_project_description'.
+  $field_instances['profile2-supporter_profile-field_cs_project_description'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 31,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_project_description',
+    'label' => 'Brief description of project',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 54,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-supporter_profile-field_cs_project_geo_scale'.
+  $field_instances['profile2-supporter_profile-field_cs_project_geo_scale'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Hold down the Ctrl key while selecting multiple items.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 33,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_project_geo_scale',
+    'label' => 'Please indicate the approximate geographical scale of the project.',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'select2_integration' => array(
+        'styling' => array(
+          'dropdownAutoWidth' => 0,
+          'placeholder' => '',
+        ),
+        'use_select2' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
+      'type' => 'options_select',
+      'weight' => 56,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-supporter_profile-field_cs_project_name'.
+  $field_instances['profile2-supporter_profile-field_cs_project_name'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 29,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_project_name',
+    'label' => 'Name of Citizen Science Project',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 52,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-supporter_profile-field_cs_project_tags'.
+  $field_instances['profile2-supporter_profile-field_cs_project_tags'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Hold down the Ctrl key while selecting multiple items.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 32,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_project_tags',
+    'label' => 'Please choose from the following list of tags to describe the content of the project.',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'select2_integration' => array(
+        'styling' => array(
+          'dropdownAutoWidth' => 0,
+          'placeholder' => '',
+        ),
+        'use_select2' => 0,
+      ),
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
+      'type' => 'options_select',
+      'weight' => 55,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-supporter_profile-field_cs_project_url'.
+  $field_instances['profile2-supporter_profile-field_cs_project_url'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 30,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_cs_project_url',
+    'label' => 'Project URL',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 53,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-supporter_profile-field_data_policy_hint'.
   $field_instances['profile2-supporter_profile-field_data_policy_hint'] = array(
     'bundle' => 'supporter_profile',
     'deleted' => 0,
@@ -3308,9 +7705,8 @@ function ecsa_profiles_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'markup',
         'settings' => array(),
-        'type' => 'markup_default',
+        'type' => 'hidden',
         'weight' => 24,
       ),
     ),
@@ -3319,6 +7715,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Data policy hint',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3326,212 +7723,45 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 19,
+      'weight' => 17,
     ),
   );
 
   // Exported field_instance:
-  // 'profile2-supporter_profile-field_eligibility_criteria'
+  // 'profile2-supporter_profile-field_eligibility_criteria'.
   $field_instances['profile2-supporter_profile-field_eligibility_criteria'] = array(
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Please explain briefly if and how you are supporting the idea of citizen science through various channels or activities (ECSA network eligibility criteria).',
     'display' => array(
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
         'weight' => 19,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_eligibility_criteria',
-    'label' => 'Explanation',
+    'label' => 'How are you supporting the idea of citizen science through various channels or activities?',
     'required' => 1,
     'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 16,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-supporter_profile-field_facebook'
-  $field_instances['profile2-supporter_profile-field_facebook'] = array(
-    'bundle' => 'supporter_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 8,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_facebook',
-    'label' => 'Facebook',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 44,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-supporter_profile-field_geofield'
-  $field_instances['profile2-supporter_profile-field_geofield'] = array(
-    'bundle' => 'supporter_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'geofield',
-        'settings' => array(
-          'data' => 'full',
-        ),
-        'type' => 'geofield_wkt',
-        'weight' => 30,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_geofield',
-    'label' => 'geofield',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'geocoder',
-      'settings' => array(
-        'delta_handling' => 'default',
-        'geocoder_field' => 'field_supporter_address',
-        'geocoder_handler' => 'google',
-        'handler_settings' => array(
-          'google' => array(
-            'all_results' => 0,
-            'geometry_type' => 'point',
-            'reject_results' => array(
-              'APPROXIMATE' => 0,
-              'GEOMETRIC_CENTER' => 0,
-              'RANGE_INTERPOLATED' => 0,
-              'ROOFTOP' => 0,
-            ),
-          ),
-        ),
-      ),
-      'type' => 'geocoder',
-      'weight' => 51,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-supporter_profile-field_legal_status'
-  $field_instances['profile2-supporter_profile-field_legal_status'] = array(
-    'bundle' => 'supporter_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 12,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_legal_status',
-    'label' => 'Legal status',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 8,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-supporter_profile-field_link'
-  $field_instances['profile2-supporter_profile-field_link'] = array(
-    'bundle' => 'supporter_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 4,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_link',
-    'label' => 'URL',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 40,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-supporter_profile-field_motivation'
-  $field_instances['profile2-supporter_profile-field_motivation'] = array(
-    'bundle' => 'supporter_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 17,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_motivation',
-    'label' => 'Please indicate your motivation to join the ECSA network as a supporter.',
-    'required' => 1,
-    'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3546,38 +7776,309 @@ function ecsa_profiles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance:
-  // 'profile2-supporter_profile-field_network_eligibility_criter'
-  $field_instances['profile2-supporter_profile-field_network_eligibility_criter'] = array(
+  // Exported field_instance: 'profile2-supporter_profile-field_facebook'.
+  $field_instances['profile2-supporter_profile-field_facebook'] = array(
     'bundle' => 'supporter_profile',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 28,
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 10,
       ),
     ),
     'entity_type' => 'profile2',
-    'field_name' => 'field_network_eligibility_criter',
-    'label' => 'Network eligibility criteria hint',
+    'field_name' => 'field_facebook',
+    'label' => 'Facebook',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 15,
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 44,
     ),
   );
 
-  // Exported field_instance: 'profile2-supporter_profile-field_network_name'
+  // Exported field_instance: 'profile2-supporter_profile-field_geofield'.
+  $field_instances['profile2-supporter_profile-field_geofield'] = array(
+    'bundle' => 'supporter_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'leaflet',
+        'settings' => array(
+          'height' => 200,
+          'icon' => array(
+            'html' => '',
+            'htmlClass' => '',
+            'iconAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'iconImageStyle' => '',
+            'iconSize' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'iconType' => 'marker',
+            'iconUrl' => '',
+            'popupAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'shadowAnchor' => array(
+              'x' => '',
+              'y' => '',
+            ),
+            'shadowUrl' => '',
+          ),
+          'leaflet_map' => 'OSM Mapnik',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'popup' => array(
+            'show' => 0,
+            'text' => '',
+          ),
+          'vector_display' => array(
+            'clickable' => 0,
+            'color' => '',
+            'dashArray' => '',
+            'fill' => 0,
+            'fillColor' => '',
+            'fillOpacity' => '',
+            'opacity' => '',
+            'stroke' => 0,
+            'stroke_override' => 0,
+            'weight' => '',
+          ),
+          'zoom' => array(
+            'initialZoom' => 6,
+            'maxZoom' => 10,
+            'minZoom' => 2,
+            'scrollWheelZoom' => 1,
+          ),
+        ),
+        'type' => 'geofield_leaflet',
+        'weight' => 3,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_geofield',
+    'label' => 'geofield',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'geocoder',
+      'settings' => array(
+        'delta_handling' => 'default',
+        'geocoder_field' => 'field_organization_address',
+        'geocoder_handler' => 'google',
+        'handler_settings' => array(
+          'google' => array(
+            'all_results' => 0,
+            'biasing' => array(
+              'bounds' => '',
+              'components' => '',
+              'region' => '',
+            ),
+            'geometry_type' => 'point',
+            'reject_results' => array(
+              'APPROXIMATE' => 0,
+              'GEOMETRIC_CENTER' => 0,
+              'RANGE_INTERPOLATED' => 0,
+              'ROOFTOP' => 0,
+            ),
+          ),
+        ),
+      ),
+      'type' => 'geocoder',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-supporter_profile-field_legal_status'.
+  $field_instances['profile2-supporter_profile-field_legal_status'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 14,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_legal_status',
+    'label' => 'Legal status',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
+      'type' => 'options_select',
+      'weight' => 8,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-supporter_profile-field_link'.
+  $field_instances['profile2-supporter_profile-field_link'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_link',
+    'label' => 'URL',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 40,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-supporter_profile-field_motivation'.
+  $field_instances['profile2-supporter_profile-field_motivation'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 18,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_motivation',
+    'label' => 'Please indicate your motivation to join the ECSA network as a supporter.',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 3,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 12,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-supporter_profile-field_network_name'.
   $field_instances['profile2-supporter_profile-field_network_name'] = array(
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
@@ -3587,16 +8088,30 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 26,
+        'weight' => 4,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_network_name',
-    'label' => 'Name',
+    'label' => 'First name',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3611,7 +8126,8 @@ function ecsa_profiles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-supporter_profile-field_network_surname'
+  // Exported field_instance:
+  // 'profile2-supporter_profile-field_network_surname'.
   $field_instances['profile2-supporter_profile-field_network_surname'] = array(
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
@@ -3621,16 +8137,30 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 27,
+        'weight' => 5,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_network_surname',
     'label' => 'Surname',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -3646,7 +8176,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-supporter_profile-field_network_working_group_hint'
+  // 'profile2-supporter_profile-field_network_working_group_hint'.
   $field_instances['profile2-supporter_profile-field_network_working_group_hint'] = array(
     'bundle' => 'supporter_profile',
     'deleted' => 0,
@@ -3654,17 +8184,18 @@ function ecsa_profiles_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'markup',
         'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 29,
+        'type' => 'hidden',
+        'weight' => 27,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_network_working_group_hint',
     'label' => 'Network Working Group Hint',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -3677,369 +8208,8 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-supporter_profile-field_organization_goals'
-  $field_instances['profile2-supporter_profile-field_organization_goals'] = array(
-    'bundle' => 'supporter_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 13,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_goals',
-    'label' => 'Please indicate the mandate/goals/activities of your organization/project.',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 9,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-supporter_profile-field_organization_logo'
-  $field_instances['profile2-supporter_profile-field_organization_logo'] = array(
-    'bundle' => 'supporter_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 15,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_logo',
-    'label' => 'High resolution logo',
-    'required' => 1,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '8 MB',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 11,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-supporter_profile-field_organization_logo_hint'
-  $field_instances['profile2-supporter_profile-field_organization_logo_hint'] = array(
-    'bundle' => 'supporter_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(),
-        'type' => 'markup_default',
-        'weight' => 14,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_logo_hint',
-    'label' => 'Organization Logo Hint',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 10,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-supporter_profile-field_organization_logo_low'
-  $field_instances['profile2-supporter_profile-field_organization_logo_low'] = array(
-    'bundle' => 'supporter_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'image',
-        'weight' => 16,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_logo_low',
-    'label' => 'Low resolution logo',
-    'required' => 0,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '1 MB',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 12,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-supporter_profile-field_organization_name'
-  $field_instances['profile2-supporter_profile-field_organization_name'] = array(
-    'bundle' => 'supporter_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_name',
-    'label' => 'Name of the organization/project in the original language',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 1,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-supporter_profile-field_organization_name_en'
-  $field_instances['profile2-supporter_profile-field_organization_name_en'] = array(
-    'bundle' => 'supporter_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 1,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_name_en',
-    'label' => 'Name of the organization/project in English',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-supporter_profile-field_organization_type'
-  $field_instances['profile2-supporter_profile-field_organization_type'] = array(
-    'bundle' => 'supporter_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'list',
-        'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 10,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_type',
-    'label' => 'Please select the type of your organization/project',
-    'required' => 1,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 6,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-supporter_profile-field_organization_type_other'
-  $field_instances['profile2-supporter_profile-field_organization_type_other'] = array(
-    'bundle' => 'supporter_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 11,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_type_other',
-    'label' => 'If other, please specify below',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 7,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-supporter_profile-field_other_contact'
-  $field_instances['profile2-supporter_profile-field_other_contact'] = array(
-    'bundle' => 'supporter_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_other_contact',
-    'label' => 'Other contact',
-    'required' => 0,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 45,
-    ),
-  );
-
-  // Exported field_instance: 'profile2-supporter_profile-field_phone'
-  $field_instances['profile2-supporter_profile-field_phone'] = array(
-    'bundle' => 'supporter_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 5,
-      ),
-    ),
-    'entity_type' => 'profile2',
-    'field_name' => 'field_phone',
-    'label' => 'Phone',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 41,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-supporter_profile-field_supporter_address'
-  $field_instances['profile2-supporter_profile-field_supporter_address'] = array(
+  // 'profile2-supporter_profile-field_organization_address'.
+  $field_instances['profile2-supporter_profile-field_organization_address'] = array(
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
@@ -4052,17 +8222,30 @@ function ecsa_profiles_field_default_field_instances() {
           'format_handlers' => array(
             0 => 'address',
           ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
           'use_widget_handlers' => 1,
         ),
         'type' => 'addressfield_default',
         'weight' => 2,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
-    'field_name' => 'field_supporter_address',
+    'field_name' => 'field_organization_address',
     'label' => 'Address',
     'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4070,7 +8253,7 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'addressfield',
       'settings' => array(
         'available_countries' => array(),
-        'default_country' => 'DE',
+        'default_country' => 'site_default',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-postal-code' => 0,
@@ -4088,52 +8271,410 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-supporter_profile-field_supporter_geofield'
-  $field_instances['profile2-supporter_profile-field_supporter_geofield'] = array(
+  // 'profile2-supporter_profile-field_organization_goals'.
+  $field_instances['profile2-supporter_profile-field_organization_goals'] = array(
     'bundle' => 'supporter_profile',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 15,
       ),
     ),
     'entity_type' => 'profile2',
-    'field_name' => 'field_supporter_geofield',
-    'label' => 'Supporter Geofield',
-    'required' => 0,
+    'field_name' => 'field_organization_goals',
+    'label' => 'Please indicate the mandate/goals/activities of your organization/project.',
+    'required' => 1,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
       'active' => 1,
-      'module' => 'geocoder',
+      'module' => 'text',
       'settings' => array(
-        'delta_handling' => 'default',
-        'geocoder_field' => 'field_supporter_address',
-        'geocoder_handler' => 'google',
-        'handler_settings' => array(
-          'google' => array(
-            'all_results' => 0,
-            'geometry_type' => 'point',
-            'reject_results' => array(
-              'APPROXIMATE' => 0,
-              'GEOMETRIC_CENTER' => 0,
-              'RANGE_INTERPOLATED' => 0,
-              'ROOFTOP' => 0,
-            ),
-          ),
-        ),
+        'rows' => 3,
       ),
-      'type' => 'geocoder',
-      'weight' => 4,
+      'type' => 'text_textarea',
+      'weight' => 9,
     ),
   );
 
-  // Exported field_instance: 'profile2-supporter_profile-field_twitter'
+  // Exported field_instance:
+  // 'profile2-supporter_profile-field_organization_logo'.
+  $field_instances['profile2-supporter_profile-field_organization_logo'] = array(
+    'bundle' => 'supporter_profile',
+    'deleted' => 0,
+    'description' => 'Please provide a high resolution file.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'image',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'image',
+        'weight' => 17,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organization_logo',
+    'label' => 'Logo',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 488,
+      'entity_translation_sync' => FALSE,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '8 MB',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'image',
+      'settings' => array(
+        'manualcrop_crop_info' => 1,
+        'manualcrop_default_crop_area' => 1,
+        'manualcrop_enable' => 0,
+        'manualcrop_inline_crop' => 0,
+        'manualcrop_instant_crop' => 0,
+        'manualcrop_instant_preview' => 1,
+        'manualcrop_keyboard' => 1,
+        'manualcrop_maximize_default_crop_area' => 0,
+        'manualcrop_require_cropping' => array(),
+        'manualcrop_styles_list' => array(),
+        'manualcrop_styles_mode' => 'include',
+        'manualcrop_thumblist' => 0,
+        'preview_image_style' => 'thumbnail',
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'image_image',
+      'weight' => 11,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-supporter_profile-field_organization_name'.
+  $field_instances['profile2-supporter_profile-field_organization_name'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organization_name',
+    'label' => 'Name of the organization/project in the original language',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 1,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-supporter_profile-field_organization_name_en'.
+  $field_instances['profile2-supporter_profile-field_organization_name_en'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organization_name_en',
+    'label' => 'Name of the organization/project in English',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-supporter_profile-field_organization_type'.
+  $field_instances['profile2-supporter_profile-field_organization_type'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'list_default',
+        'weight' => 12,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organization_type',
+    'label' => 'Please select the type of your organization/project',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'use_select2' => FALSE,
+      ),
+      'type' => 'options_select',
+      'weight' => 6,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-supporter_profile-field_organization_type_other'.
+  $field_instances['profile2-supporter_profile-field_organization_type_other'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_organization_type_other',
+    'label' => 'If other, please specify below',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 7,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-supporter_profile-field_other_contact'.
+  $field_instances['profile2-supporter_profile-field_other_contact'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 11,
+      ),
+    ),
+    'entity_type' => 'profile2',
+    'field_name' => 'field_other_contact',
+    'label' => 'Other contact',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 45,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-supporter_profile-field_phone'.
+  $field_instances['profile2-supporter_profile-field_phone'] = array(
+    'bundle' => 'supporter_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_phone',
+    'label' => 'Phone',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 41,
+    ),
+  );
+
+  // Exported field_instance: 'profile2-supporter_profile-field_twitter'.
   $field_instances['profile2-supporter_profile-field_twitter'] = array(
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
@@ -4143,9 +8684,21 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 9,
       ),
     ),
     'entity_type' => 'profile2',
@@ -4153,6 +8706,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Twitter',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -4168,7 +8722,7 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-supporter_profile-field_working_group_new'
+  // 'profile2-supporter_profile-field_working_group_new'.
   $field_instances['profile2-supporter_profile-field_working_group_new'] = array(
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
@@ -4178,9 +8732,21 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'text_default',
-        'weight' => 22,
+        'weight' => 21,
       ),
     ),
     'entity_type' => 'profile2',
@@ -4188,6 +8754,7 @@ function ecsa_profiles_field_default_field_instances() {
     'label' => 'Suggest new Working Group on',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
@@ -4202,7 +8769,7 @@ function ecsa_profiles_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-supporter_profile-field_working_groups'
+  // Exported field_instance: 'profile2-supporter_profile-field_working_groups'.
   $field_instances['profile2-supporter_profile-field_working_groups'] = array(
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
@@ -4212,16 +8779,30 @@ function ecsa_profiles_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'list',
-        'settings' => array(),
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
         'type' => 'list_default',
-        'weight' => 21,
+        'weight' => 20,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_working_groups',
     'label' => 'Working groups',
     'required' => 0,
     'settings' => array(
+      'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -4248,36 +8829,36 @@ function ecsa_profiles_field_default_field_instances() {
   t('ECSA Membership Agreement');
   t('ECSA Working Group Hint');
   t('Email');
-  t('Explanation');
   t('Facebook');
-  t('High resolution logo');
+  t('First name');
   t('Hold down the <Ctrl> key while selecting multiple items.');
+  t('Hold down the Ctrl key while selecting multiple items.');
+  t('How are you performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science?');
+  t('How are you supporting the idea of citizen science through various channels or activities?');
   t('If other, please specify below');
   t('If other, please specify below.');
-  t('Individual Geofield');
-  t('Individual eligibility criteria hint');
+  t('If you like, you can upload a picture of you here. Otherwhise the default ECSA member logo will be used. If you choose to upload a picture, please provide a high resolution image. ');
   t('Legal status');
-  t('Low resolution logo');
-  t('Name');
+  t('Logo');
   t('Name of Citizen Science Project');
   t('Name of the organization/project in English');
   t('Name of the organization/project in the original language');
   t('Network Working Group Hint');
-  t('Network eligibility criteria hint');
-  t('Organization Geofield');
-  t('Organization Logo Hint');
-  t('Organization eligibility criteria hint');
   t('Organization running the project');
   t('Organizational affiliation');
   t('Organizational affiliation hint');
   t('Other contact');
   t('Phone');
+  t('Picture');
   t('Please choose from the following list of tags to describe the content of the project.');
+  t('Please explain briefly if and how you are performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science, e.g. via funding or via communication (ECSA membership eligibility criteria).');
+  t('Please explain briefly if and how you are supporting the idea of citizen science through various channels or activities (ECSA network eligibility criteria).');
   t('Please indicate the approximate geographical scale of the project.');
   t('Please indicate the mandate/goals/activities of your organization/project.');
   t('Please indicate your motivation to join ECSA.');
   t('Please indicate your motivation to join the ECSA network as a supporter.');
   t('Please indicate your organization’s/projects VAT number, if applicable.');
+  t('Please provide a high resolution file.');
   t('Please select the type of your organization/project');
   t('Please select your type of occupation');
   t('Project URL');
@@ -4285,7 +8866,6 @@ function ecsa_profiles_field_default_field_instances() {
   t('Reduction');
   t('Reduction types');
   t('Suggest new Working Group on');
-  t('Supporter Geofield');
   t('Surname');
   t('Twitter');
   t('URL');
