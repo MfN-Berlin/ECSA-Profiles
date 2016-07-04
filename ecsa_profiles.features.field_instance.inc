@@ -20,7 +20,7 @@ function ecsa_profiles_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 36,
+        'weight' => 37,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -89,7 +89,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'markup_default',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -158,7 +158,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 28,
+        'weight' => 29,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -231,7 +231,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -276,7 +276,7 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 30,
     ),
   );
 
@@ -305,7 +305,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -378,7 +378,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -451,7 +451,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 27,
+        'weight' => 28,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -524,7 +524,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -597,7 +597,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'list_default',
-        'weight' => 26,
+        'weight' => 27,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -669,7 +669,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -742,7 +742,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'list_default',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -814,7 +814,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -873,7 +873,7 @@ function ecsa_profiles_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 35,
+        'weight' => 36,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -943,7 +943,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -1016,7 +1016,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'markup_default',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -1086,7 +1086,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -1130,7 +1130,7 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 32,
     ),
   );
 
@@ -1144,7 +1144,7 @@ function ecsa_profiles_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 34,
+        'weight' => 35,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -1209,6 +1209,65 @@ function ecsa_profiles_field_default_field_instances() {
       ),
       'type' => 'geocoder',
       'weight' => 5,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_home_address_geofield'.
+  $field_instances['profile2-individual_profile-field_home_address_geofield'] = array(
+    'bundle' => 'individual_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 40,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_home_address_geofield',
+    'label' => 'Home Address Geofield',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'geocoder',
+      'settings' => array(
+        'delta_handling' => 'default',
+        'geocoder_field' => 'field_private_address',
+        'geocoder_handler' => 'google',
+        'handler_settings' => array(
+          'google' => array(
+            'all_results' => 0,
+            'biasing' => array(
+              'bounds' => '',
+              'components' => '',
+              'region' => '',
+            ),
+            'geometry_type' => 'point',
+            'reject_results' => array(
+              'APPROXIMATE' => 0,
+              'GEOMETRIC_CENTER' => 0,
+              'RANGE_INTERPOLATED' => 0,
+              'ROOFTOP' => 0,
+            ),
+          ),
+        ),
+      ),
+      'type' => 'geocoder',
+      'weight' => 27,
     ),
   );
 
@@ -1409,7 +1468,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -1454,7 +1513,7 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 4,
+      'weight' => 28,
     ),
   );
 
@@ -1470,7 +1529,7 @@ function ecsa_profiles_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 37,
+        'weight' => 38,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -1526,7 +1585,7 @@ function ecsa_profiles_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 33,
+        'weight' => 34,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -1595,7 +1654,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 16,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -1669,7 +1728,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'list_default',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -1741,7 +1800,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -1800,7 +1859,7 @@ function ecsa_profiles_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 38,
+        'weight' => 39,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -1871,7 +1930,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -2037,7 +2096,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'image',
-        'weight' => 14,
+        'weight' => 15,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -2111,7 +2170,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -2156,7 +2215,7 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 9,
+      'weight' => 33,
     ),
   );
 
@@ -2184,7 +2243,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -2229,7 +2288,76 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 29,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-individual_profile-field_private_address'.
+  $field_instances['profile2-individual_profile-field_private_address'] = array(
+    'bundle' => 'individual_profile',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'addressfield',
+        'settings' => array(
+          'format_handlers' => array(
+            0 => 'address',
+          ),
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+          'use_widget_handlers' => 1,
+        ),
+        'type' => 'addressfield_default',
+        'weight' => 3,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_private_address',
+    'label' => 'Home Address',
+    'required' => 1,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'addressfield',
+      'settings' => array(
+        'available_countries' => array(),
+        'default_country' => 'site_default',
+        'format_handlers' => array(
+          'address' => 'address',
+          'address-hide-postal-code' => 0,
+          'address-hide-street' => 0,
+          'address-hide-country' => 0,
+          'organisation' => 0,
+          'name-full' => 0,
+          'name-oneline' => 0,
+          'address-optional' => 0,
+        ),
+      ),
+      'type' => 'addressfield_standard',
+      'weight' => 26,
     ),
   );
 
@@ -2257,7 +2385,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'markup_default',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -2328,7 +2456,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'list_default',
-        'weight' => 30,
+        'weight' => 31,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -2398,7 +2526,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -2442,7 +2570,7 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 31,
     ),
   );
 
@@ -2471,7 +2599,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'file_default',
-        'weight' => 32,
+        'weight' => 33,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -2546,7 +2674,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'markup_default',
-        'weight' => 31,
+        'weight' => 32,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -2616,7 +2744,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'markup_default',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -2686,7 +2814,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -2759,7 +2887,7 @@ function ecsa_profiles_field_default_field_instances() {
           ),
         ),
         'type' => 'list_default',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'member_proifile_view' => array(
         'label' => 'above',
@@ -8833,6 +8961,8 @@ function ecsa_profiles_field_default_field_instances() {
   t('First name');
   t('Hold down the <Ctrl> key while selecting multiple items.');
   t('Hold down the Ctrl key while selecting multiple items.');
+  t('Home Address');
+  t('Home Address Geofield');
   t('How are you performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science?');
   t('How are you supporting the idea of citizen science through various channels or activities?');
   t('If other, please specify below');

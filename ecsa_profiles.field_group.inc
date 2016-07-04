@@ -133,6 +133,8 @@ function ecsa_profiles_field_group_info() {
       3 => 'field_phone',
       4 => 'field_twitter',
       5 => 'field_link',
+      6 => 'field_private_address',
+      7 => 'field_home_address_geofield',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
