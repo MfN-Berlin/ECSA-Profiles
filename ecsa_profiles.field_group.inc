@@ -56,7 +56,7 @@ function ecsa_profiles_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Your Citizen Science Projects',
-    'weight' => '22',
+    'weight' => '21',
     'children' => array(
       0 => 'field_citizen_science_hint',
       1 => 'field_cs_project_contact',
@@ -133,14 +133,15 @@ function ecsa_profiles_field_group_info() {
       3 => 'field_phone',
       4 => 'field_twitter',
       5 => 'field_link',
-      6 => 'field_private_address',
-      7 => 'field_home_address_geofield',
+      6 => 'field_home_address_geofield',
+      7 => 'field_private_address',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
       'label' => 'Contact Details',
       'instance_settings' => array(
-        'required_fields' => 1,
+        'required_fields' => 0,
+        'id' => '',
         'classes' => 'group-contact field-group-fieldset',
         'description' => '',
       ),
@@ -324,7 +325,7 @@ function ecsa_profiles_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'ECSA delegate 2',
+    'label' => 'Organization representative to ECSA 3',
     'weight' => '16',
     'children' => array(
       0 => 'field_organization_del2_name',
@@ -336,7 +337,7 @@ function ecsa_profiles_field_group_info() {
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'label' => 'ECSA delegate 2',
+      'label' => 'Organization representative to ECSA 3',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -424,20 +425,19 @@ function ecsa_profiles_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'ECSA delegate 1',
+    'label' => 'Organization representative to ECSA 2',
     'weight' => '15',
     'children' => array(
       0 => 'field_cs_expertise_area',
-      1 => 'field_expertise_area_hint',
-      2 => 'field_organization_del_surname',
-      3 => 'field_organization_delegate_name',
-      4 => 'field_organization_delegate_url',
-      5 => 'field_organization_delegateemail',
-      6 => 'field_organization_delegatephone',
+      1 => 'field_organization_del_surname',
+      2 => 'field_organization_delegate_name',
+      3 => 'field_organization_delegate_url',
+      4 => 'field_organization_delegateemail',
+      5 => 'field_organization_delegatephone',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'label' => 'ECSA delegate 1',
+      'label' => 'Organization representative to ECSA 2',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -491,20 +491,19 @@ function ecsa_profiles_field_group_info() {
   $field_group->mode = 'form';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'ECSA main contact / President of the organization / Project leader',
-    'weight' => '14',
+    'label' => 'Main ECSA contact',
+    'weight' => '13',
     'children' => array(
-      0 => 'field_expertise_areas_hint_pres',
-      1 => 'field_expertise_areas_pres',
-      2 => 'field_organization_leader_email',
-      3 => 'field_organization_leader_name',
-      4 => 'field_organization_leader_phone',
-      5 => 'field_organization_leader_url',
-      6 => 'field_organization_pres_surname',
+      0 => 'field_expertise_areas_pres',
+      1 => 'field_organization_leader_email',
+      2 => 'field_organization_leader_name',
+      3 => 'field_organization_leader_phone',
+      4 => 'field_organization_leader_url',
+      5 => 'field_organization_pres_surname',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
-      'label' => 'ECSA main contact / President of the organization / Project leader',
+      'label' => 'Main ECSA contact',
       'instance_settings' => array(
         'required_fields' => 1,
         'id' => '',
@@ -588,7 +587,7 @@ function ecsa_profiles_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'ECSA Working Groups',
-    'weight' => '21',
+    'weight' => '20',
     'children' => array(
       0 => 'field_working_group_hint',
       1 => 'field_working_group_new',
@@ -645,7 +644,9 @@ function ecsa_profiles_field_group_info() {
   t('ECSA delegate 1');
   t('ECSA delegate 2');
   t('ECSA delegate 3');
-  t('ECSA main contact / President of the organization / Project leader');
+  t('Main ECSA contact');
+  t('Organization representative to ECSA 2');
+  t('Organization representative to ECSA 3');
   t('President of the organization/project leader');
   t('Reduction');
   t('Your Citizen Science Projects');

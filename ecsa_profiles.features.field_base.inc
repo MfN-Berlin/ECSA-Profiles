@@ -27,7 +27,7 @@ function ecsa_profiles_field_default_field_bases() {
       'entity_translation_sync' => FALSE,
       'markup' => array(
         'format' => 'namu_filtered_text',
-        'value' => '<p>For your application we ask you to create a personal account on the website. It helps us to reduce spam applications. Upon admission, you&rsquo;ll use this account to access the internal part of the website and maintain your profile.</p><p>&nbsp;</p>',
+        'value' => '<p>For your application we ask you to create a personal account on the website. It helps us to reduce spam applications. The data you provide here will be used for your profile on the ECSA website; they will be displayed publicly unless indicated otherwhise. Upon admission, you&rsquo;ll use this account to access the internal part of the website and maintain your profile.</p><p>&nbsp;</p>',
       ),
       'profile2_private' => 0,
     ),
@@ -68,7 +68,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_comments',
     'field_permissions' => array(
-      'type' => 1,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(
@@ -387,6 +387,31 @@ function ecsa_profiles_field_default_field_bases() {
     'type' => 'markup',
   );
 
+  // Exported field_base: 'field_delegates_hint'.
+  $field_bases['field_delegates_hint'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_delegates_hint',
+    'field_permissions' => array(
+      'type' => 0,
+    ),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'markup',
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'markup' => array(
+        'format' => 'php_code',
+        'value' => 'As organizational member in ECSA you can nominate up to 3 representatives of your organization to participate in ECSA activities, such as working groups, mailinglists and meetings. You are invited to specify the data of two additional representatives from your organization below.',
+      ),
+      'profile2_private' => 0,
+    ),
+    'translatable' => 0,
+    'type' => 'markup',
+  );
+
   // Exported field_base: 'field_eligibility_criteria'.
   $field_bases['field_eligibility_criteria'] = array(
     'active' => 1,
@@ -429,32 +454,7 @@ function ecsa_profiles_field_default_field_bases() {
       'entity_translation_sync' => FALSE,
       'markup' => array(
         'format' => 'namu_filtered_text',
-        'value' => '<p>Please indicate areas of expertise for which other ECSA members may contact you. This information will only be visible on the internal profile visible to members only.</p>',
-      ),
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'markup',
-  );
-
-  // Exported field_base: 'field_expertise_areas_hint_pres'.
-  $field_bases['field_expertise_areas_hint_pres'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_expertise_areas_hint_pres',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'markup',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'markup' => array(
-        'format' => 'namu_filtered_text',
-        'value' => '<p>Please indicate areas of expertise for which other ECSA members my contact you. This information will only be visible on the internal profile visible to members only.</p>',
+        'value' => '<p>Please indicate areas of expertise for which ECSA and other members may contact you.</p>',
       ),
       'profile2_private' => 0,
     ),
@@ -683,7 +683,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_legal_status',
     'field_permissions' => array(
-      'type' => 2,
+      'type' => 0,
     ),
     'indexes' => array(
       'value' => array(
@@ -1157,161 +1157,6 @@ function ecsa_profiles_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_organization_del2_url',
-    'field_permissions' => array(
-      'type' => 2,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max_length' => 255,
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_organization_del3_email'.
-  $field_bases['field_organization_del3_email'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organization_del3_email',
-    'field_permissions' => array(
-      'type' => 2,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max_length' => 255,
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_organization_del3_exp_area'.
-  $field_bases['field_organization_del3_exp_area'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organization_del3_exp_area',
-    'field_permissions' => array(
-      'type' => 2,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'text_long',
-  );
-
-  // Exported field_base: 'field_organization_del3_name'.
-  $field_bases['field_organization_del3_name'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organization_del3_name',
-    'field_permissions' => array(
-      'type' => 2,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max_length' => 255,
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_organization_del3_phone'.
-  $field_bases['field_organization_del3_phone'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organization_del3_phone',
-    'field_permissions' => array(
-      'type' => 2,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max_length' => 255,
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_organization_del3_surname'.
-  $field_bases['field_organization_del3_surname'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organization_del3_surname',
-    'field_permissions' => array(
-      'type' => 2,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max_length' => 255,
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_organization_del3_url'.
-  $field_bases['field_organization_del3_url'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organization_del3_url',
     'field_permissions' => array(
       'type' => 2,
     ),
@@ -1849,7 +1694,7 @@ function ecsa_profiles_field_default_field_bases() {
       'entity_translation_sync' => FALSE,
       'markup' => array(
         'format' => 'namu_filtered_text',
-        'value' => '<p>Reduction is available for:</p>',
+        'value' => '<p>A reduction of membership fees is available for:</p>',
       ),
       'profile2_private' => 0,
     ),
@@ -1865,7 +1710,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_reduction_types',
     'field_permissions' => array(
-      'type' => 1,
+      'type' => 2,
     ),
     'indexes' => array(
       'value' => array(
@@ -1922,7 +1767,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_upload_document',
     'field_permissions' => array(
-      'type' => 1,
+      'type' => 2,
     ),
     'indexes' => array(
       'fid' => array(
@@ -1961,7 +1806,7 @@ function ecsa_profiles_field_default_field_bases() {
       'entity_translation_sync' => FALSE,
       'markup' => array(
         'format' => 'namu_filtered_text',
-        'value' => '<p>Please, upload an official document of your status.</p>',
+        'value' => '<p>Once your membership application has been accepted, we will ask you to upload an official document certifying your status here.</p>',
       ),
       'profile2_private' => 0,
     ),
@@ -1977,7 +1822,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_vat',
     'field_permissions' => array(
-      'type' => 1,
+      'type' => 2,
     ),
     'indexes' => array(
       'value' => array(
@@ -2007,7 +1852,7 @@ function ecsa_profiles_field_default_field_bases() {
     'entity_types' => array(),
     'field_name' => 'field_vat_number',
     'field_permissions' => array(
-      'type' => 1,
+      'type' => 2,
     ),
     'indexes' => array(
       'format' => array(

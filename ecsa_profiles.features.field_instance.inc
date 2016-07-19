@@ -48,6 +48,7 @@ function ecsa_profiles_field_default_field_instances() {
         'weight' => 23,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_account_hint',
     'label' => 'Account hint',
@@ -139,7 +140,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'individual_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -212,7 +213,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'individual_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -286,7 +287,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'individual_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -333,6 +334,7 @@ function ecsa_profiles_field_default_field_instances() {
         'weight' => 11,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_cs_expertise_area',
     'label' => 'Areas of expertise',
@@ -924,7 +926,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'individual_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please explain briefly if and how you are performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science, e.g. via funding or via communication (ECSA membership eligibility criteria).',
+    'description' => 'Please explain briefly if and how you are performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science, e.g. via funding or via communication (ECSA membership eligibility criteria). This text will help to assess your membership application and will inform others on your activities. It will be publicly displayed on your profile once your membership has been accepted.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1067,7 +1069,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'individual_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1114,6 +1116,7 @@ function ecsa_profiles_field_default_field_instances() {
         'weight' => 7,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_facebook',
     'label' => 'Facebook',
@@ -1424,6 +1427,7 @@ function ecsa_profiles_field_default_field_instances() {
         'weight' => 0,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_individual_surname',
     'label' => 'Surname',
@@ -1635,7 +1639,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'individual_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This text is for ECSA to assess your membership application, it will not be publicly displayed.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1958,6 +1962,7 @@ function ecsa_profiles_field_default_field_instances() {
         'weight' => 34,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organisational_affiliation',
     'label' => 'Organizational affiliation',
@@ -1984,7 +1989,11 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'individual_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'If you enter an address here, your profile will be displayed publicly on the ECSA community map (as a dot) and on the list view when sorted by country. A small map will also show up on your profile page. Your written address will only be visible to site administrators.
+
+For this, we need a country, postal code, and city (depending on the country also a provice). The data will be geocoded and for this purpose sent to Google and back. For data security reasons, you may want to consider to not use your home address here, but rather an institution you\'re affiliated with or the city center, for instance. You can also insert N/A for the street. 
+
+If you do not enter an address here, your profile will not be visible at the ECSA community map, neither in the list view when sorted by country, no map on your profile.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2042,8 +2051,8 @@ function ecsa_profiles_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_address',
-    'label' => 'Address',
-    'required' => 1,
+    'label' => 'Address for Maps on ECSA Website',
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'user_register_form' => FALSE,
@@ -2053,7 +2062,7 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'addressfield',
       'settings' => array(
         'available_countries' => array(),
-        'default_country' => 'site_default',
+        'default_country' => '',
         'format_handlers' => array(
           'address' => 'address',
           'address-hide-postal-code' => 0,
@@ -2075,7 +2084,8 @@ function ecsa_profiles_field_default_field_instances() {
   $field_instances['profile2-individual_profile-field_organization_logo'] = array(
     'bundle' => 'individual_profile',
     'deleted' => 0,
-    'description' => 'If you like, you can upload a picture of you here. Otherwhise the default ECSA member logo will be used. If you choose to upload a picture, please provide a high resolution image. ',
+    'description' => 'If you like, you can upload a picture of you here. Otherwhise the default ECSA member logo will be used. If you choose to upload a picture, please provide a high resolution image. 
+The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – we want people to have fun when they look at it with an iPhone or other retina displays.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2151,7 +2161,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'individual_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2224,7 +2234,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'individual_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2275,7 +2285,7 @@ function ecsa_profiles_field_default_field_instances() {
     'entity_type' => 'profile2',
     'field_name' => 'field_phone',
     'label' => 'Phone',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'text_processing' => 0,
@@ -2298,7 +2308,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'individual_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Please provide your real address here. It will be used internally for ECSA membership administration, e.g. to send you a receipt for the membership fees. The address you enter here will only be visible to site administrators and will not be used on any map.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2333,7 +2343,7 @@ function ecsa_profiles_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_private_address',
-    'label' => 'Home Address',
+    'label' => 'Address for ECSA Membership Administration',
     'required' => 1,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -2416,7 +2426,7 @@ function ecsa_profiles_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_reduction_hint',
-    'label' => 'Reduction',
+    'label' => 'Reduction on membership fees',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -2507,7 +2517,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'individual_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -2554,6 +2564,7 @@ function ecsa_profiles_field_default_field_instances() {
         'weight' => 6,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_twitter',
     'label' => 'Twitter',
@@ -3076,7 +3087,11 @@ function ecsa_profiles_field_default_field_instances() {
   // Exported field_instance: 'profile2-organization_profile-field_comments'.
   $field_instances['profile2-organization_profile-field_comments'] = array(
     'bundle' => 'organization_profile',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'value' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -3142,7 +3157,7 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 23,
+      'weight' => 22,
     ),
   );
 
@@ -3152,7 +3167,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3226,7 +3241,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3290,7 +3305,7 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 15,
+      'weight' => 13,
     ),
   );
 
@@ -3786,7 +3801,58 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 26,
+      'weight' => 25,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'profile2-organization_profile-field_delegates_hint'.
+  $field_instances['profile2-organization_profile-field_delegates_hint'] = array(
+    'bundle' => 'organization_profile',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'markup',
+        'settings' => array(
+          'linked_field' => array(
+            'advanced' => array(
+              'class' => '',
+              'rel' => '',
+              'target' => '',
+              'text' => '',
+              'title' => '',
+            ),
+            'destination' => '',
+            'linked' => 0,
+          ),
+        ),
+        'type' => 'markup_default',
+        'weight' => 57,
+      ),
+      'member_proifile_view' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'profile2',
+    'field_name' => 'field_delegates_hint',
+    'label' => 'Delegates hint',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'markup',
+      'settings' => array(),
+      'type' => 'markup',
+      'weight' => 14,
     ),
   );
 
@@ -3796,7 +3862,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please explain briefly if and how you are performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science, e.g. via funding or via communication (ECSA membership eligibility criteria).',
+    'description' => 'Please explain briefly if and how you are performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science, e.g. via funding or via communication (ECSA membership eligibility criteria). This text will help us to assess your membership application and will inform others on your activities. It will be publicly displayed on your profile once your membership has been accepted.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -3860,121 +3926,7 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 20,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_expertise_area_hint'.
-  $field_instances['profile2-organization_profile-field_expertise_area_hint'] = array(
-    'bundle' => 'organization_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'markup_default',
-        'weight' => 31,
-      ),
-      'member_proifile_view' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 40,
-      ),
-      'page' => array(
-        'label' => 'above',
-        'module' => 'markup',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'markup_default',
-        'weight' => 31,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'profile2',
-    'field_name' => 'field_expertise_area_hint',
-    'label' => 'Areas of expertise',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 14,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_expertise_areas_hint_pres'.
-  $field_instances['profile2-organization_profile-field_expertise_areas_hint_pres'] = array(
-    'bundle' => 'organization_profile',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 37,
-      ),
-      'member_proifile_view' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 56,
-      ),
-      'page' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 37,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'profile2',
-    'field_name' => 'field_expertise_areas_hint_pres',
-    'label' => 'Areas of Expertise',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'markup',
-      'settings' => array(),
-      'type' => 'markup',
-      'weight' => 22,
+      'weight' => 19,
     ),
   );
 
@@ -3984,7 +3936,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4048,7 +4000,7 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 23,
+      'weight' => 22,
     ),
   );
 
@@ -4057,7 +4009,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4451,7 +4403,7 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 24,
+      'weight' => 23,
     ),
   );
 
@@ -4495,7 +4447,7 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 25,
+      'weight' => 24,
     ),
   );
 
@@ -4504,7 +4456,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This text is for ECSA to assess your membership application, it will not be publicly displayed.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4578,7 +4530,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The address you enter here will be used for membership administration and for displaying your profile publicly on the ECSA community map (as a dot) as well as on the list view when sorted by country. A small map will also show up on your profile page. Your written address will only be visible to site administrators. ',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4670,7 +4622,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4744,7 +4696,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4818,7 +4770,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4892,7 +4844,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -4966,7 +4918,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5040,7 +4992,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5109,437 +5061,12 @@ function ecsa_profiles_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_del3_email'.
-  $field_instances['profile2-organization_profile-field_organization_del3_email'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 41,
-      ),
-      'member_proifile_view' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 49,
-      ),
-      'page' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 41,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_del3_email',
-    'label' => 'Email',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 31,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_del3_exp_area'.
-  $field_instances['profile2-organization_profile-field_organization_del3_exp_area'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 42,
-      ),
-      'member_proifile_view' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_del3_exp_area',
-    'label' => 'Areas of expertise',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 3,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 32,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_del3_name'.
-  $field_instances['profile2-organization_profile-field_organization_del3_name'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 37,
-      ),
-      'member_proifile_view' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 45,
-      ),
-      'page' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 37,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_del3_name',
-    'label' => 'First name',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 27,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_del3_phone'.
-  $field_instances['profile2-organization_profile-field_organization_del3_phone'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 40,
-      ),
-      'member_proifile_view' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 50,
-      ),
-      'page' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 40,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_del3_phone',
-    'label' => 'Phone',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 30,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_del3_surname'.
-  $field_instances['profile2-organization_profile-field_organization_del3_surname'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 38,
-      ),
-      'member_proifile_view' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 48,
-      ),
-      'page' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 38,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_del3_surname',
-    'label' => 'Surname',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 28,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'profile2-organization_profile-field_organization_del3_url'.
-  $field_instances['profile2-organization_profile-field_organization_del3_url'] = array(
-    'bundle' => 'organization_profile',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 39,
-      ),
-      'member_proifile_view' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 47,
-      ),
-      'page' => array(
-        'label' => 'above',
-        'module' => 'text',
-        'settings' => array(
-          'linked_field' => array(
-            'advanced' => array(
-              'class' => '',
-              'rel' => '',
-              'target' => '',
-              'text' => '',
-              'title' => '',
-            ),
-            'destination' => '',
-            'linked' => 0,
-          ),
-        ),
-        'type' => 'text_default',
-        'weight' => 39,
-      ),
-    ),
-    'ds_extras_field_template' => '',
-    'entity_type' => 'profile2',
-    'field_name' => 'field_organization_del3_url',
-    'label' => 'URL',
-    'required' => 0,
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 29,
-    ),
-  );
-
-  // Exported field_instance:
   // 'profile2-organization_profile-field_organization_del_surname'.
   $field_instances['profile2-organization_profile-field_organization_del_surname'] = array(
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5613,7 +5140,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5687,7 +5214,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5761,7 +5288,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5825,7 +5352,7 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -5835,7 +5362,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -5899,7 +5426,7 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -5982,7 +5509,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6056,7 +5583,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6130,7 +5657,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6181,7 +5708,7 @@ function ecsa_profiles_field_default_field_instances() {
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_leader_phone',
     'label' => 'Phone',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'text_processing' => 0,
@@ -6204,7 +5731,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6277,7 +5804,7 @@ function ecsa_profiles_field_default_field_instances() {
   $field_instances['profile2-organization_profile-field_organization_logo'] = array(
     'bundle' => 'organization_profile',
     'deleted' => 0,
-    'description' => 'Please provide a high resolution file.',
+    'description' => 'Please provide a high resolution file. The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – we want people to have fun when they look at it with an iPhone or other retina displays.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6380,7 +5907,7 @@ function ecsa_profiles_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -6549,7 +6076,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6768,7 +6295,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6841,7 +6368,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -6892,7 +6419,7 @@ function ecsa_profiles_field_default_field_instances() {
     'entity_type' => 'profile2',
     'field_name' => 'field_phone',
     'label' => 'Phone',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'text_processing' => 0,
@@ -6914,7 +6441,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7066,7 +6593,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'organization_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7428,7 +6955,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7476,7 +7003,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7861,7 +7388,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Please explain briefly if and how you are supporting the idea of citizen science through various channels or activities (ECSA network eligibility criteria).',
+    'description' => 'Please explain briefly if and how you are supporting the idea of citizen science through various channels or activities (ECSA network eligibility criteria). This text will help to assess your membership application and will inform others on your activities. It will be publicly displayed on your profile once your membership has been accepted.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7909,7 +7436,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -7931,6 +7458,7 @@ function ecsa_profiles_field_default_field_instances() {
         'weight' => 10,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_facebook',
     'label' => 'Facebook',
@@ -8091,12 +7619,20 @@ function ecsa_profiles_field_default_field_instances() {
         'weight' => 14,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_legal_status',
     'label' => 'Legal status',
     'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
+      'select2_integration' => array(
+        'styling' => array(
+          'dropdownAutoWidth' => 0,
+          'placeholder' => '',
+        ),
+        'use_select2' => 0,
+      ),
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -8163,7 +7699,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This text is for ECSA to assess your membership application, it will not be publicly displayed.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -8211,7 +7747,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -8260,7 +7796,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -8341,7 +7877,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The address you enter here will be used for membership administration and for displaying your profile publicly on the ECSA community map (as a dot) as well as on the list view when sorted by country. A small map will also show up on your profile page. Your written address will only be visible to site administrators.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -8370,7 +7906,7 @@ function ecsa_profiles_field_default_field_instances() {
     'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_address',
-    'label' => 'Address',
+    'label' => 'Address of the organization/project',
     'required' => 1,
     'settings' => array(
       'entity_translation_sync' => FALSE,
@@ -8426,6 +7962,7 @@ function ecsa_profiles_field_default_field_instances() {
         'weight' => 15,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_organization_goals',
     'label' => 'Please indicate the mandate/goals/activities of your organization/project.',
@@ -8451,7 +7988,7 @@ function ecsa_profiles_field_default_field_instances() {
   $field_instances['profile2-supporter_profile-field_organization_logo'] = array(
     'bundle' => 'supporter_profile',
     'deleted' => 0,
-    'description' => 'Please provide a high resolution file.',
+    'description' => 'Please provide a high resolution file. The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – we want people to have fun when they look at it with an iPhone or other retina displays.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -8712,7 +8249,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -8734,6 +8271,7 @@ function ecsa_profiles_field_default_field_instances() {
         'weight' => 11,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_other_contact',
     'label' => 'Other contact',
@@ -8759,7 +8297,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -8785,7 +8323,7 @@ function ecsa_profiles_field_default_field_instances() {
     'entity_type' => 'profile2',
     'field_name' => 'field_phone',
     'label' => 'Phone',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'entity_translation_sync' => FALSE,
       'text_processing' => 0,
@@ -8807,7 +8345,7 @@ function ecsa_profiles_field_default_field_instances() {
     'bundle' => 'supporter_profile',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'This information will only be displayed for other ECSA members and supporters who are logged in with their account.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -8829,6 +8367,7 @@ function ecsa_profiles_field_default_field_instances() {
         'weight' => 9,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_twitter',
     'label' => 'Twitter',
@@ -8945,7 +8484,8 @@ function ecsa_profiles_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Account hint');
-  t('Address');
+  t('Address for ECSA Membership Administration');
+  t('Address for Maps on ECSA Website');
   t('Address of the organization/project');
   t('Agreement hint');
   t('Areas of Expertise');
@@ -8954,6 +8494,7 @@ function ecsa_profiles_field_default_field_instances() {
   t('Citizen Science Project');
   t('Comments');
   t('Data policy hint');
+  t('Delegates hint');
   t('ECSA Membership Agreement');
   t('ECSA Working Group Hint');
   t('Email');
@@ -8961,13 +8502,18 @@ function ecsa_profiles_field_default_field_instances() {
   t('First name');
   t('Hold down the <Ctrl> key while selecting multiple items.');
   t('Hold down the Ctrl key while selecting multiple items.');
-  t('Home Address');
   t('Home Address Geofield');
   t('How are you performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science?');
   t('How are you supporting the idea of citizen science through various channels or activities?');
   t('If other, please specify below');
   t('If other, please specify below.');
-  t('If you like, you can upload a picture of you here. Otherwhise the default ECSA member logo will be used. If you choose to upload a picture, please provide a high resolution image. ');
+  t('If you enter an address here, your profile will be displayed publicly on the ECSA community map (as a dot) and on the list view when sorted by country. A small map will also show up on your profile page. Your written address will only be visible to site administrators.
+
+For this, we need a country, postal code, and city (depending on the country also a provice). The data will be geocoded and for this purpose sent to Google and back. For data security reasons, you may want to consider to not use your home address here, but rather an institution you\'re affiliated with or the city center, for instance. You can also insert N/A for the street. 
+
+If you do not enter an address here, your profile will not be visible at the ECSA community map, neither in the list view when sorted by country, no map on your profile.');
+  t('If you like, you can upload a picture of you here. Otherwhise the default ECSA member logo will be used. If you choose to upload a picture, please provide a high resolution image. 
+The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – we want people to have fun when they look at it with an iPhone or other retina displays.');
   t('Legal status');
   t('Logo');
   t('Name of Citizen Science Project');
@@ -8981,22 +8527,29 @@ function ecsa_profiles_field_default_field_instances() {
   t('Phone');
   t('Picture');
   t('Please choose from the following list of tags to describe the content of the project.');
-  t('Please explain briefly if and how you are performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science, e.g. via funding or via communication (ECSA membership eligibility criteria).');
-  t('Please explain briefly if and how you are supporting the idea of citizen science through various channels or activities (ECSA network eligibility criteria).');
+  t('Please explain briefly if and how you are performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science, e.g. via funding or via communication (ECSA membership eligibility criteria). This text will help to assess your membership application and will inform others on your activities. It will be publicly displayed on your profile once your membership has been accepted.');
+  t('Please explain briefly if and how you are performing research on Citizen Science, taking part in Citizen Science activities and/or supporting Citizen Science, e.g. via funding or via communication (ECSA membership eligibility criteria). This text will help us to assess your membership application and will inform others on your activities. It will be publicly displayed on your profile once your membership has been accepted.');
+  t('Please explain briefly if and how you are supporting the idea of citizen science through various channels or activities (ECSA network eligibility criteria). This text will help to assess your membership application and will inform others on your activities. It will be publicly displayed on your profile once your membership has been accepted.');
   t('Please indicate the approximate geographical scale of the project.');
   t('Please indicate the mandate/goals/activities of your organization/project.');
   t('Please indicate your motivation to join ECSA.');
   t('Please indicate your motivation to join the ECSA network as a supporter.');
   t('Please indicate your organization’s/projects VAT number, if applicable.');
-  t('Please provide a high resolution file.');
+  t('Please provide a high resolution file. The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – we want people to have fun when they look at it with an iPhone or other retina displays.');
+  t('Please provide your real address here. It will be used internally for ECSA membership administration, e.g. to send you a receipt for the membership fees. The address you enter here will only be visible to site administrators and will not be used on any map.');
   t('Please select the type of your organization/project');
   t('Please select your type of occupation');
   t('Project URL');
   t('Project social media contacts');
-  t('Reduction');
+  t('Reduction on membership fees');
   t('Reduction types');
   t('Suggest new Working Group on');
   t('Surname');
+  t('The address you enter here will be used for membership administration and for displaying your profile publicly on the ECSA community map (as a dot) as well as on the list view when sorted by country. A small map will also show up on your profile page. Your written address will only be visible to site administrators.');
+  t('The address you enter here will be used for membership administration and for displaying your profile publicly on the ECSA community map (as a dot) as well as on the list view when sorted by country. A small map will also show up on your profile page. Your written address will only be visible to site administrators. ');
+  t('This information will not be publicly displayed on the ECSA website and only be visible to the ECSA administration.');
+  t('This information will only be displayed for other ECSA members and supporters who are logged in with their account.');
+  t('This text is for ECSA to assess your membership application, it will not be publicly displayed.');
   t('Twitter');
   t('URL');
   t('Upload');
