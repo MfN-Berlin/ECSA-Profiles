@@ -21,7 +21,7 @@ function ecsa_profiles_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Your Citizen Science Projects',
-    'weight' => '18',
+    'weight' => '17',
     'children' => array(
       0 => 'field_citizen_science_hint',
       1 => 'field_cs_organization_name',
@@ -56,7 +56,7 @@ function ecsa_profiles_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Your Citizen Science Projects',
-    'weight' => '21',
+    'weight' => '20',
     'children' => array(
       0 => 'field_citizen_science_hint',
       1 => 'field_cs_project_contact',
@@ -90,7 +90,7 @@ function ecsa_profiles_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Your Citizen Science Projects',
-    'weight' => '15',
+    'weight' => '14',
     'children' => array(
       0 => 'field_citizen_science_hint',
       1 => 'field_cs_project_name',
@@ -125,7 +125,7 @@ function ecsa_profiles_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact Details',
-    'weight' => '6',
+    'weight' => '5',
     'children' => array(
       0 => 'field_contact_email',
       1 => 'field_facebook',
@@ -526,7 +526,7 @@ function ecsa_profiles_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Reduction',
-    'weight' => '14',
+    'weight' => '13',
     'children' => array(
       0 => 'field_reduction_hint',
       1 => 'field_reduction_types',
@@ -557,7 +557,7 @@ function ecsa_profiles_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'ECSA Working Groups',
-    'weight' => '17',
+    'weight' => '16',
     'children' => array(
       0 => 'field_working_group_hint',
       1 => 'field_working_group_new',
@@ -587,7 +587,7 @@ function ecsa_profiles_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'ECSA Working Groups',
-    'weight' => '20',
+    'weight' => '19',
     'children' => array(
       0 => 'field_working_group_hint',
       1 => 'field_working_group_new',
@@ -617,7 +617,7 @@ function ecsa_profiles_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'ECSA Working Groups',
-    'weight' => '14',
+    'weight' => '13',
     'children' => array(
       0 => 'field_network_working_group_hint',
       1 => 'field_working_group_new',

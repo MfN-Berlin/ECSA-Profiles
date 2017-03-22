@@ -62,7 +62,7 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 1,
+      'weight' => 0,
     ),
   );
 
@@ -204,7 +204,7 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 19,
+      'weight' => 18,
     ),
   );
 
@@ -351,7 +351,7 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -916,7 +916,7 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 22,
+      'weight' => 21,
     ),
   );
 
@@ -990,7 +990,7 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 16,
+      'weight' => 15,
     ),
   );
 
@@ -1060,7 +1060,7 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -1211,7 +1211,7 @@ function ecsa_profiles_field_default_field_instances() {
         ),
       ),
       'type' => 'geocoder',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -1357,7 +1357,7 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
@@ -1444,7 +1444,7 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 2,
     ),
   );
 
@@ -1574,7 +1574,7 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 20,
+      'weight' => 19,
     ),
   );
 
@@ -1630,7 +1630,7 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 21,
+      'weight' => 20,
     ),
   );
 
@@ -1703,7 +1703,7 @@ function ecsa_profiles_field_default_field_instances() {
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 15,
+      'weight' => 14,
     ),
   );
 
@@ -1775,7 +1775,7 @@ function ecsa_profiles_field_default_field_instances() {
         'use_select2' => FALSE,
       ),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -1848,7 +1848,7 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -1905,7 +1905,7 @@ function ecsa_profiles_field_default_field_instances() {
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -1979,7 +1979,7 @@ function ecsa_profiles_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -2075,7 +2075,7 @@ If you do not enter an address here, your profile will not be visible at the ECS
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -2152,7 +2152,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -3157,7 +3157,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 22,
+      'weight' => 21,
     ),
   );
 
@@ -3801,7 +3801,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 25,
+      'weight' => 24,
     ),
   );
 
@@ -3926,7 +3926,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 19,
+      'weight' => 18,
     ),
   );
 
@@ -4403,7 +4403,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_buttons',
-      'weight' => 23,
+      'weight' => 22,
     ),
   );
 
@@ -4447,7 +4447,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 24,
+      'weight' => 23,
     ),
   );
 
@@ -4520,7 +4520,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 18,
+      'weight' => 17,
     ),
   );
 
@@ -6994,7 +6994,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 16,
+      'weight' => 15,
     ),
   );
 
@@ -7378,7 +7378,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
       'module' => 'markup',
       'settings' => array(),
       'type' => 'markup',
-      'weight' => 17,
+      'weight' => 16,
     ),
   );
 
@@ -7427,7 +7427,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -7738,7 +7738,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
         'rows' => 3,
       ),
       'type' => 'text_textarea',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -8049,7 +8049,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
