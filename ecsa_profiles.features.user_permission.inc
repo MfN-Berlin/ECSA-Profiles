@@ -15,6 +15,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'create field_comments',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
       'anonymous user' => 'anonymous user',
     ),
     'module' => 'field_permissions',
@@ -354,6 +355,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'create field_vat',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
       'anonymous user' => 'anonymous user',
     ),
     'module' => 'field_permissions',
@@ -364,6 +366,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'create field_vat_number',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
       'anonymous user' => 'anonymous user',
     ),
     'module' => 'field_permissions',
@@ -374,6 +377,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_comments',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -383,6 +387,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_contact_email',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -392,6 +397,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_cs_expertise_area',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -401,6 +407,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_expertise_areas_pres',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -410,6 +417,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_facebook',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -419,6 +427,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_motivation',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -428,6 +437,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_network_name',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -437,6 +447,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_network_surname',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -446,6 +457,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_address',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -455,6 +467,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_del2_email',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -464,6 +477,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_del2_exp_area',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -473,6 +487,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_del2_name',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -482,6 +497,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_del2_phone',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -491,6 +507,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_del2_surname',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -500,6 +517,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_del2_url',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -509,6 +527,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_del_surname',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -518,6 +537,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_delegate_name',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -527,6 +547,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_delegate_url',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -536,6 +557,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_delegateemail',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -545,6 +567,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_delegatephone',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -554,6 +577,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_leader_email',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -563,6 +587,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_leader_name',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -572,6 +597,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_leader_phone',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -581,6 +607,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_leader_url',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -590,6 +617,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_organization_pres_surname',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -599,6 +627,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_other_contact',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -608,6 +637,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_phone',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -617,6 +647,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_private_address',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -626,6 +657,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_reduction_types',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -635,6 +667,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_twitter',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -644,6 +677,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_upload_document',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -653,6 +687,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_vat',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -662,6 +697,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'edit field_vat_number',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1001,6 +1037,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_comments',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1010,6 +1047,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_contact_email',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1057,6 +1095,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_motivation',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1086,6 +1125,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_organization_address',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1095,6 +1135,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_organization_del2_email',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1130,6 +1171,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_organization_del2_phone',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1204,6 +1246,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_organization_delegateemail',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1213,6 +1256,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_organization_delegatephone',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1222,6 +1266,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_organization_leader_email',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1231,6 +1276,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_organization_leader_name',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
       'Redakteur' => 'Redakteur',
       'membership individual' => 'membership individual',
       'membership organization' => 'membership organization',
@@ -1243,6 +1289,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_organization_leader_phone',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1265,6 +1312,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_organization_pres_surname',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
       'Redakteur' => 'Redakteur',
       'membership individual' => 'membership individual',
       'membership organization' => 'membership organization',
@@ -1290,6 +1338,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_phone',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1299,6 +1348,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_private_address',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1308,6 +1358,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_reduction_types',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1330,6 +1381,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_upload_document',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1339,6 +1391,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_vat',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
@@ -1348,6 +1401,7 @@ function ecsa_profiles_user_default_permissions() {
     'name' => 'view field_vat_number',
     'roles' => array(
       'Admin' => 'Admin',
+      'Manager' => 'Manager',
     ),
     'module' => 'field_permissions',
   );
