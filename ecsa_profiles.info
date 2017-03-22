@@ -1,7 +1,7 @@
-name = ECSA profiles
+name = ECSA Profiles
 description = Organization, individual, and ECSA supporter profiles
 core = 7.x
-package = Features
+package = ECSA Features
 version = 7.x-1.0-beta4
 dependencies[] = addressfield
 dependencies[] = ctools
