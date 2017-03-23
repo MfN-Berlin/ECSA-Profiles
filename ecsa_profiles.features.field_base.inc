@@ -1887,7 +1887,7 @@ function ecsa_profiles_field_default_field_bases() {
       'entity_translation_sync' => FALSE,
       'markup' => array(
         'format' => 'namu_filtered_text',
-        'value' => '<p>ECSA Members are encouraged to join existing working groups or suggest new ones within ECSA. If you already know in which working group you would like to contribute, please tick the field. The working group chair will contact you.</p>',
+        'value' => '<p>ECSA Members are encouraged to join existing working groups or suggest new ones within ECSA. Please, indicate in which working groups you would like to actively contribute to (we recommend a maximum of 2). The working group chair will contact you.</p>',
       ),
       'profile2_private' => 0,
     ),

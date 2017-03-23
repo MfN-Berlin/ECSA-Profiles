@@ -2783,6 +2783,7 @@ The larger, the better: 300x200 pixel & 144 dpi are recommended as minumum – w
         'weight' => 16,
       ),
     ),
+    'ds_extras_field_template' => '',
     'entity_type' => 'profile2',
     'field_name' => 'field_working_group_hint',
     'label' => 'ECSA Working Group Hint',
