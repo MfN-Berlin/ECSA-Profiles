@@ -879,7 +879,7 @@ function ecsa_profiles_field_default_field_bases() {
       'entity_translation_sync' => FALSE,
       'markup' => array(
         'format' => 'namu_filtered_text',
-        'value' => '<p>ECSA Supporters have the possibility to join and contribute to ECSA Working Groups as observers. If you already know in which working group you would be interested, please tick the field. The working group chair will contact you.</p>',
+        'value' => '<p>ECSA Supporters have the possibility to join and contribute to ECSA Working Groups as observers. A complete list of WGs is available on the ECSA website.</p>',
       ),
       'profile2_private' => 0,
     ),
@@ -1887,75 +1887,12 @@ function ecsa_profiles_field_default_field_bases() {
       'entity_translation_sync' => FALSE,
       'markup' => array(
         'format' => 'namu_filtered_text',
-        'value' => '<p>ECSA Members are encouraged to join existing working groups or suggest new ones within ECSA. Please, indicate in which working groups you would like to actively contribute to (we recommend a maximum of 2). The working group chair will contact you.</p>',
+        'value' => '<p>ECSA Members are encouraged to join existing working groups or suggest new ones within ECSA. A complete list of WGs is available on the ECSA website.</p>',
       ),
       'profile2_private' => 0,
     ),
     'translatable' => 0,
     'type' => 'markup',
-  );
-
-  // Exported field_base: 'field_working_group_new'.
-  $field_bases['field_working_group_new'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_working_group_new',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'format' => array(
-        0 => 'format',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'text',
-    'settings' => array(
-      'entity_translation_sync' => FALSE,
-      'max_length' => 255,
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'text',
-  );
-
-  // Exported field_base: 'field_working_groups'.
-  $field_bases['field_working_groups'] = array(
-    'active' => 1,
-    'cardinality' => 10,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_working_groups',
-    'field_permissions' => array(
-      'type' => 0,
-    ),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        'Communication & Events' => 'Communication & Events',
-        'Fundraising & Marketing' => 'Fundraising & Marketing',
-        'Policy, Strategy, Governance & Partnerships' => 'Policy, Strategy, Governance & Partnerships',
-        'Principles & Standards in Citizen Science: Sharing Best Practice & Building Capacity' => 'Principles & Standards in Citizen Science: Sharing Best Practice & Building Capacity',
-        'Projects, Data, Tools & Technology' => 'Projects, Data, Tools & Technology',
-        'Citizen Science & Responsible Research and Innovation' => 'Citizen Science & Responsible Research and Innovation',
-        'Learning & Education in Citizen Science' => 'Learning & Education in Citizen Science',
-        'BioBlitzers' => 'BioBlitzers',
-        'I would like to suggest a working group' => 'I would like to suggest a working group',
-      ),
-      'allowed_values_function' => '',
-      'entity_translation_sync' => FALSE,
-      'profile2_private' => 0,
-    ),
-    'translatable' => 0,
-    'type' => 'list_text',
   );
 
   return $field_bases;
