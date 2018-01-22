@@ -696,6 +696,7 @@ function ecsa_profiles_views_default_views() {
     'name' => 'name',
     'mail' => 'mail',
     'url' => 'url',
+    'created' => 'created',
     'field_individual_name' => 'field_individual_name',
     'field_individual_surname' => 'field_individual_surname',
     'field_private_address' => 'field_private_address',
@@ -721,7 +722,7 @@ function ecsa_profiles_views_default_views() {
     'field_cs_project_contact' => 'field_cs_project_contact',
     'field_comments' => 'field_comments',
   );
-  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['default'] = 'created';
   $handler->display->display_options['style_options']['info'] = array(
     'name' => array(
       'sortable' => 1,
@@ -738,6 +739,13 @@ function ecsa_profiles_views_default_views() {
       'empty_column' => 0,
     ),
     'url' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'created' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'desc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -941,6 +949,17 @@ function ecsa_profiles_views_default_views() {
   $handler->display->display_options['fields']['url']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['url']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['url']['link_to_entity'] = 0;
+  /* Field: Member for */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'users';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['relationship'] = 'user';
+  $handler->display->display_options['fields']['created']['ui_name'] = 'Member for';
+  $handler->display->display_options['fields']['created']['label'] = 'Member for';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'raw time ago';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Contact First Name */
   $handler->display->display_options['fields']['field_individual_name']['id'] = 'field_individual_name';
   $handler->display->display_options['fields']['field_individual_name']['table'] = 'field_data_field_individual_name';
@@ -1572,6 +1591,17 @@ function ecsa_profiles_views_default_views() {
   $handler->display->display_options['fields']['url']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['url']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['url']['link_to_entity'] = 0;
+  /* Field: Created Date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'users';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['relationship'] = 'user';
+  $handler->display->display_options['fields']['created']['ui_name'] = 'Created Date';
+  $handler->display->display_options['fields']['created']['label'] = 'Created Date';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'short';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Contact First Name */
   $handler->display->display_options['fields']['field_individual_name']['id'] = 'field_individual_name';
   $handler->display->display_options['fields']['field_individual_name']['table'] = 'field_data_field_individual_name';
@@ -2132,8 +2162,10 @@ function ecsa_profiles_views_default_views() {
     t('CS Project Social'),
     t('Comments'),
     t('Page'),
+    t('Member for'),
     t('Contact Name'),
     t('Data export'),
+    t('Created Date'),
   );
   $export['ecsa_member_individual_list'] = $view;
 
@@ -3199,6 +3231,7 @@ function ecsa_profiles_views_default_views() {
     'name' => 'name',
     'mail' => 'mail',
     'url' => 'url',
+    'created' => 'created',
     'field_organization_name' => 'field_organization_name',
     'field_organization_name_en' => 'field_organization_name_en',
     'field_organization_address' => 'field_organization_address',
@@ -3242,7 +3275,7 @@ function ecsa_profiles_views_default_views() {
     'field_cs_project_contact' => 'field_cs_project_contact',
     'field_comments' => 'field_comments',
   );
-  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['default'] = 'created';
   $handler->display->display_options['style_options']['info'] = array(
     'name' => array(
       'sortable' => 1,
@@ -3259,6 +3292,13 @@ function ecsa_profiles_views_default_views() {
       'empty_column' => 0,
     ),
     'url' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'created' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'desc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -3588,6 +3628,17 @@ function ecsa_profiles_views_default_views() {
   $handler->display->display_options['fields']['url']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['url']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['url']['link_to_entity'] = 0;
+  /* Field: Member for */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'users';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['relationship'] = 'user';
+  $handler->display->display_options['fields']['created']['ui_name'] = 'Member for';
+  $handler->display->display_options['fields']['created']['label'] = 'Member for';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'raw time ago';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Organization Name */
   $handler->display->display_options['fields']['field_organization_name']['id'] = 'field_organization_name';
   $handler->display->display_options['fields']['field_organization_name']['table'] = 'field_data_field_organization_name';
@@ -4640,6 +4691,17 @@ function ecsa_profiles_views_default_views() {
   $handler->display->display_options['fields']['url']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['url']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['url']['link_to_entity'] = 0;
+  /* Field: Created Date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'users';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['relationship'] = 'user';
+  $handler->display->display_options['fields']['created']['ui_name'] = 'Created Date';
+  $handler->display->display_options['fields']['created']['label'] = 'Created Date';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'short';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Organization Name */
   $handler->display->display_options['fields']['field_organization_name']['id'] = 'field_organization_name';
   $handler->display->display_options['fields']['field_organization_name']['table'] = 'field_data_field_organization_name';
@@ -5599,9 +5661,11 @@ function ecsa_profiles_views_default_views() {
     t('CS Project Social'),
     t('Comments'),
     t('Page'),
+    t('Member for'),
     t('President First Name'),
     t('Contact Name'),
     t('Data export'),
+    t('Created Date'),
   );
   $export['ecsa_member_organization_list'] = $view;
 
@@ -6289,6 +6353,7 @@ function ecsa_profiles_views_default_views() {
     'name' => 'name',
     'mail' => 'mail',
     'url' => 'url',
+    'created' => 'created',
     'field_organization_name' => 'field_organization_name',
     'field_organization_name_en' => 'field_organization_name_en',
     'field_organization_address' => 'field_organization_address',
@@ -6314,7 +6379,7 @@ function ecsa_profiles_views_default_views() {
     'field_cs_project_contact' => 'field_cs_project_contact',
     'field_comments' => 'field_comments',
   );
-  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['default'] = 'created';
   $handler->display->display_options['style_options']['info'] = array(
     'name' => array(
       'sortable' => 1,
@@ -6331,6 +6396,13 @@ function ecsa_profiles_views_default_views() {
       'empty_column' => 0,
     ),
     'url' => array(
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'created' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'desc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -6534,6 +6606,17 @@ function ecsa_profiles_views_default_views() {
   $handler->display->display_options['fields']['url']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['url']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['url']['link_to_entity'] = 0;
+  /* Field: Member for */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'users';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['relationship'] = 'user';
+  $handler->display->display_options['fields']['created']['ui_name'] = 'Member for';
+  $handler->display->display_options['fields']['created']['label'] = 'Member for';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'raw time ago';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Organization Name */
   $handler->display->display_options['fields']['field_organization_name']['id'] = 'field_organization_name';
   $handler->display->display_options['fields']['field_organization_name']['table'] = 'field_data_field_organization_name';
@@ -7195,6 +7278,17 @@ function ecsa_profiles_views_default_views() {
   $handler->display->display_options['fields']['url']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['url']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['url']['link_to_entity'] = 0;
+  /* Field: Created Date */
+  $handler->display->display_options['fields']['created']['id'] = 'created';
+  $handler->display->display_options['fields']['created']['table'] = 'users';
+  $handler->display->display_options['fields']['created']['field'] = 'created';
+  $handler->display->display_options['fields']['created']['relationship'] = 'user';
+  $handler->display->display_options['fields']['created']['ui_name'] = 'Created Date';
+  $handler->display->display_options['fields']['created']['label'] = 'Created Date';
+  $handler->display->display_options['fields']['created']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['created']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['created']['date_format'] = 'short';
+  $handler->display->display_options['fields']['created']['second_date_format'] = 'long';
   /* Field: Organization Name */
   $handler->display->display_options['fields']['field_organization_name']['id'] = 'field_organization_name';
   $handler->display->display_options['fields']['field_organization_name']['table'] = 'field_data_field_organization_name';
@@ -7758,8 +7852,10 @@ function ecsa_profiles_views_default_views() {
     t('CS Project Social'),
     t('Comments'),
     t('Page'),
+    t('Member for'),
     t('Contact Name'),
     t('Data export'),
+    t('Created Date'),
   );
   $export['ecsa_member_supporter_list'] = $view;
 
