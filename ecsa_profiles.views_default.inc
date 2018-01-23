@@ -1653,6 +1653,7 @@ function ecsa_profiles_views_default_views() {
   $handler->display->display_options['fields']['field_private_address']['field'] = 'field_private_address';
   $handler->display->display_options['fields']['field_private_address']['ui_name'] = 'Contact Address';
   $handler->display->display_options['fields']['field_private_address']['label'] = 'Contact Address';
+  $handler->display->display_options['fields']['field_private_address']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_private_address']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_private_address']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_private_address']['click_sort_column'] = 'country';
@@ -1673,6 +1674,55 @@ function ecsa_profiles_views_default_views() {
       ),
     ),
   );
+  /* Field: Contact Address 1 */
+  $handler->display->display_options['fields']['field_private_address_thoroughfare']['id'] = 'field_private_address_thoroughfare';
+  $handler->display->display_options['fields']['field_private_address_thoroughfare']['table'] = 'field_data_field_private_address';
+  $handler->display->display_options['fields']['field_private_address_thoroughfare']['field'] = 'field_private_address_thoroughfare';
+  $handler->display->display_options['fields']['field_private_address_thoroughfare']['ui_name'] = 'Contact Address 1';
+  $handler->display->display_options['fields']['field_private_address_thoroughfare']['label'] = 'Contact Address 1';
+  $handler->display->display_options['fields']['field_private_address_thoroughfare']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_private_address_thoroughfare']['element_default_classes'] = FALSE;
+  /* Field: Contact Address 2 */
+  $handler->display->display_options['fields']['field_private_address_premise']['id'] = 'field_private_address_premise';
+  $handler->display->display_options['fields']['field_private_address_premise']['table'] = 'field_data_field_private_address';
+  $handler->display->display_options['fields']['field_private_address_premise']['field'] = 'field_private_address_premise';
+  $handler->display->display_options['fields']['field_private_address_premise']['ui_name'] = 'Contact Address 2';
+  $handler->display->display_options['fields']['field_private_address_premise']['label'] = 'Contact Address 2';
+  $handler->display->display_options['fields']['field_private_address_premise']['element_default_classes'] = FALSE;
+  /* Field: Contact Postal Code */
+  $handler->display->display_options['fields']['field_private_address_postal_code']['id'] = 'field_private_address_postal_code';
+  $handler->display->display_options['fields']['field_private_address_postal_code']['table'] = 'field_data_field_private_address';
+  $handler->display->display_options['fields']['field_private_address_postal_code']['field'] = 'field_private_address_postal_code';
+  $handler->display->display_options['fields']['field_private_address_postal_code']['ui_name'] = 'Contact Postal Code';
+  $handler->display->display_options['fields']['field_private_address_postal_code']['label'] = 'Contact Postal Code';
+  $handler->display->display_options['fields']['field_private_address_postal_code']['element_default_classes'] = FALSE;
+  /* Field: Contact City */
+  $handler->display->display_options['fields']['field_private_address_locality']['id'] = 'field_private_address_locality';
+  $handler->display->display_options['fields']['field_private_address_locality']['table'] = 'field_data_field_private_address';
+  $handler->display->display_options['fields']['field_private_address_locality']['field'] = 'field_private_address_locality';
+  $handler->display->display_options['fields']['field_private_address_locality']['ui_name'] = 'Contact City';
+  $handler->display->display_options['fields']['field_private_address_locality']['label'] = 'Contact City';
+  $handler->display->display_options['fields']['field_private_address_locality']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_private_address_locality']['element_default_classes'] = FALSE;
+  /* Field: Contact Province */
+  $handler->display->display_options['fields']['field_private_address_administrative_area']['id'] = 'field_private_address_administrative_area';
+  $handler->display->display_options['fields']['field_private_address_administrative_area']['table'] = 'field_data_field_private_address';
+  $handler->display->display_options['fields']['field_private_address_administrative_area']['field'] = 'field_private_address_administrative_area';
+  $handler->display->display_options['fields']['field_private_address_administrative_area']['ui_name'] = 'Contact Province';
+  $handler->display->display_options['fields']['field_private_address_administrative_area']['label'] = 'Contact Province';
+  $handler->display->display_options['fields']['field_private_address_administrative_area']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_private_address_administrative_area']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_private_address_administrative_area']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_private_address_administrative_area']['display_name'] = 1;
+  /* Field: Contact Country */
+  $handler->display->display_options['fields']['field_private_address_country']['id'] = 'field_private_address_country';
+  $handler->display->display_options['fields']['field_private_address_country']['table'] = 'field_data_field_private_address';
+  $handler->display->display_options['fields']['field_private_address_country']['field'] = 'field_private_address_country';
+  $handler->display->display_options['fields']['field_private_address_country']['ui_name'] = 'Contact Country';
+  $handler->display->display_options['fields']['field_private_address_country']['label'] = 'Contact Country';
+  $handler->display->display_options['fields']['field_private_address_country']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_private_address_country']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_private_address_country']['display_name'] = 1;
   /* Field: Contact URL */
   $handler->display->display_options['fields']['field_link']['id'] = 'field_link';
   $handler->display->display_options['fields']['field_link']['table'] = 'field_data_field_link';
@@ -2166,6 +2216,12 @@ function ecsa_profiles_views_default_views() {
     t('Contact Name'),
     t('Data export'),
     t('Created Date'),
+    t('Contact Address 1'),
+    t('Contact Address 2'),
+    t('Contact Postal Code'),
+    t('Contact City'),
+    t('Contact Province'),
+    t('Contact Country'),
   );
   $export['ecsa_member_individual_list'] = $view;
 
@@ -4744,12 +4800,62 @@ function ecsa_profiles_views_default_views() {
       ),
     ),
   );
+  /* Field: Organization Contact Address 1 */
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['id'] = 'field_organization_address_thoroughfare';
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['table'] = 'field_data_field_organization_address';
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['field'] = 'field_organization_address_thoroughfare';
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['ui_name'] = 'Organization Contact Address 1';
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['label'] = 'Organization Contact Address 1';
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['element_default_classes'] = FALSE;
+  /* Field: Organization Contact Address 2 */
+  $handler->display->display_options['fields']['field_organization_address_premise']['id'] = 'field_organization_address_premise';
+  $handler->display->display_options['fields']['field_organization_address_premise']['table'] = 'field_data_field_organization_address';
+  $handler->display->display_options['fields']['field_organization_address_premise']['field'] = 'field_organization_address_premise';
+  $handler->display->display_options['fields']['field_organization_address_premise']['ui_name'] = 'Organization Contact Address 2';
+  $handler->display->display_options['fields']['field_organization_address_premise']['label'] = 'Organization Contact Address 2';
+  $handler->display->display_options['fields']['field_organization_address_premise']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_premise']['element_default_classes'] = FALSE;
+  /* Field: Organization Postal Code */
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['id'] = 'field_organization_address_postal_code';
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['table'] = 'field_data_field_organization_address';
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['field'] = 'field_organization_address_postal_code';
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['ui_name'] = 'Organization Postal Code';
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['label'] = 'Organization Postal Code';
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['element_default_classes'] = FALSE;
+  /* Field: Organization City */
+  $handler->display->display_options['fields']['field_organization_address_locality']['id'] = 'field_organization_address_locality';
+  $handler->display->display_options['fields']['field_organization_address_locality']['table'] = 'field_data_field_organization_address';
+  $handler->display->display_options['fields']['field_organization_address_locality']['field'] = 'field_organization_address_locality';
+  $handler->display->display_options['fields']['field_organization_address_locality']['ui_name'] = 'Organization City';
+  $handler->display->display_options['fields']['field_organization_address_locality']['label'] = 'Organization City';
+  $handler->display->display_options['fields']['field_organization_address_locality']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_locality']['element_default_classes'] = FALSE;
+  /* Field: Organization Province */
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['id'] = 'field_organization_address_administrative_area';
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['table'] = 'field_data_field_organization_address';
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['field'] = 'field_organization_address_administrative_area';
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['ui_name'] = 'Organization Province';
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['label'] = 'Organization Province';
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['display_name'] = 1;
+  /* Field: Organization Country */
+  $handler->display->display_options['fields']['field_organization_address_country']['id'] = 'field_organization_address_country';
+  $handler->display->display_options['fields']['field_organization_address_country']['table'] = 'field_data_field_organization_address';
+  $handler->display->display_options['fields']['field_organization_address_country']['field'] = 'field_organization_address_country';
+  $handler->display->display_options['fields']['field_organization_address_country']['ui_name'] = 'Organization Country';
+  $handler->display->display_options['fields']['field_organization_address_country']['label'] = 'Organization Country';
+  $handler->display->display_options['fields']['field_organization_address_country']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_country']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_country']['display_name'] = 1;
   /* Field: Organization Address */
   $handler->display->display_options['fields']['field_organization_address']['id'] = 'field_organization_address';
   $handler->display->display_options['fields']['field_organization_address']['table'] = 'field_data_field_organization_address';
   $handler->display->display_options['fields']['field_organization_address']['field'] = 'field_organization_address';
   $handler->display->display_options['fields']['field_organization_address']['ui_name'] = 'Organization Address';
   $handler->display->display_options['fields']['field_organization_address']['label'] = 'Organization Address';
+  $handler->display->display_options['fields']['field_organization_address']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_organization_address']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_organization_address']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_organization_address']['click_sort_column'] = 'country';
@@ -5666,6 +5772,12 @@ function ecsa_profiles_views_default_views() {
     t('Contact Name'),
     t('Data export'),
     t('Created Date'),
+    t('Organization Contact Address 1'),
+    t('Organization Contact Address 2'),
+    t('Organization Postal Code'),
+    t('Organization City'),
+    t('Organization Province'),
+    t('Organization Country'),
   );
   $export['ecsa_member_organization_list'] = $view;
 
@@ -7337,6 +7449,7 @@ function ecsa_profiles_views_default_views() {
   $handler->display->display_options['fields']['field_organization_address']['field'] = 'field_organization_address';
   $handler->display->display_options['fields']['field_organization_address']['ui_name'] = 'Organization Address';
   $handler->display->display_options['fields']['field_organization_address']['label'] = 'Organization Address';
+  $handler->display->display_options['fields']['field_organization_address']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_organization_address']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_organization_address']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['field_organization_address']['click_sort_column'] = 'country';
@@ -7357,6 +7470,55 @@ function ecsa_profiles_views_default_views() {
       ),
     ),
   );
+  /* Field: Organization Contact Address 1 */
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['id'] = 'field_organization_address_thoroughfare';
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['table'] = 'field_data_field_organization_address';
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['field'] = 'field_organization_address_thoroughfare';
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['ui_name'] = 'Organization Contact Address 1';
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['label'] = 'Organization Contact Address 1';
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_thoroughfare']['element_default_classes'] = FALSE;
+  /* Field: Organization Contact Address 2 */
+  $handler->display->display_options['fields']['field_organization_address_premise']['id'] = 'field_organization_address_premise';
+  $handler->display->display_options['fields']['field_organization_address_premise']['table'] = 'field_data_field_organization_address';
+  $handler->display->display_options['fields']['field_organization_address_premise']['field'] = 'field_organization_address_premise';
+  $handler->display->display_options['fields']['field_organization_address_premise']['ui_name'] = 'Organization Contact Address 2';
+  $handler->display->display_options['fields']['field_organization_address_premise']['label'] = 'Organization Contact Address 2';
+  $handler->display->display_options['fields']['field_organization_address_premise']['element_default_classes'] = FALSE;
+  /* Field: Organization Postal Code */
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['id'] = 'field_organization_address_postal_code';
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['table'] = 'field_data_field_organization_address';
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['field'] = 'field_organization_address_postal_code';
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['ui_name'] = 'Organization Postal Code';
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['label'] = 'Organization Postal Code';
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_postal_code']['element_default_classes'] = FALSE;
+  /* Field: Organization City */
+  $handler->display->display_options['fields']['field_organization_address_locality']['id'] = 'field_organization_address_locality';
+  $handler->display->display_options['fields']['field_organization_address_locality']['table'] = 'field_data_field_organization_address';
+  $handler->display->display_options['fields']['field_organization_address_locality']['field'] = 'field_organization_address_locality';
+  $handler->display->display_options['fields']['field_organization_address_locality']['ui_name'] = 'Organization City';
+  $handler->display->display_options['fields']['field_organization_address_locality']['label'] = 'Organization City';
+  $handler->display->display_options['fields']['field_organization_address_locality']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_locality']['element_default_classes'] = FALSE;
+  /* Field: Organization Province */
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['id'] = 'field_organization_address_administrative_area';
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['table'] = 'field_data_field_organization_address';
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['field'] = 'field_organization_address_administrative_area';
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['ui_name'] = 'Organization Province';
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['label'] = 'Organization Province';
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_administrative_area']['display_name'] = 1;
+  /* Field: Organization Country */
+  $handler->display->display_options['fields']['field_organization_address_country']['id'] = 'field_organization_address_country';
+  $handler->display->display_options['fields']['field_organization_address_country']['table'] = 'field_data_field_organization_address';
+  $handler->display->display_options['fields']['field_organization_address_country']['field'] = 'field_organization_address_country';
+  $handler->display->display_options['fields']['field_organization_address_country']['ui_name'] = 'Organization Country';
+  $handler->display->display_options['fields']['field_organization_address_country']['label'] = 'Organization Country';
+  $handler->display->display_options['fields']['field_organization_address_country']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_country']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_organization_address_country']['display_name'] = 1;
   /* Field: Contact First Name */
   $handler->display->display_options['fields']['field_network_name']['id'] = 'field_network_name';
   $handler->display->display_options['fields']['field_network_name']['table'] = 'field_data_field_network_name';
@@ -7856,6 +8018,12 @@ function ecsa_profiles_views_default_views() {
     t('Contact Name'),
     t('Data export'),
     t('Created Date'),
+    t('Organization Contact Address 1'),
+    t('Organization Contact Address 2'),
+    t('Organization Postal Code'),
+    t('Organization City'),
+    t('Organization Province'),
+    t('Organization Country'),
   );
   $export['ecsa_member_supporter_list'] = $view;
 
